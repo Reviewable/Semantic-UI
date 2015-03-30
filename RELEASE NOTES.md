@@ -1,5 +1,10 @@
 ## RELEASE NOTES
 
+### Version 0.19.3-pk1 - Mar 30, 2015
+
+**Enhancements**
+- **Icon** - (Backport from 1.0 branch) Updated to Font Awesome 4.3 and the 1.x branch icon names.  Removed basic icon set.
+
 ### Version 0.19.3 - Sep 11, 2014
 
 **Bug Fixes**
