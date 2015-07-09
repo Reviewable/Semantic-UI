@@ -5180,7 +5180,10 @@ $.fn.dropdown = function(parameters) {
             callback = callback || function(){};
             if(module.is.visible($currentMenu) ) {
               module.verbose('Doing menu hide animation', $currentMenu);
-              if($.fn.transition !== undefined && $module.transition('is supported')) {
+              if(settings.transition == 'none') {
+                callback();
+              }
+              else if($.fn.transition !== undefined && $module.transition('is supported')) {
                 $currentMenu
                   .transition({
                     animation : settings.transition + ' out',
@@ -5189,9 +5192,6 @@ $.fn.dropdown = function(parameters) {
                     queue     : false
                   })
                 ;
-              }
-              else if(settings.transition == 'none') {
-                callback();
               }
               else if(settings.transition == 'slide down') {
                 $currentMenu
@@ -5235,7 +5235,7 @@ $.fn.dropdown = function(parameters) {
             module.set.active();
             module.animate.show(function() {
               if( module.can.click() ) {
-                module.bind.intent();
+                setTimeout(module.bind.intent, 0);
               }
               module.set.visible();
             });

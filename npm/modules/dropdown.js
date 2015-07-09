@@ -655,7 +655,10 @@ module.exports = function(parameters) {
             callback = callback || function(){};
             if(module.is.visible($currentMenu) ) {
               module.verbose('Doing menu hide animation', $currentMenu);
-              if(module.exports !== undefined && $module.transition('is supported')) {
+              if(settings.transition == 'none') {
+                callback();
+              }
+              else if(module.exports !== undefined && $module.transition('is supported')) {
                 $currentMenu
                   .transition({
                     animation : settings.transition + ' out',
@@ -664,9 +667,6 @@ module.exports = function(parameters) {
                     queue     : false
                   })
                 ;
-              }
-              else if(settings.transition == 'none') {
-                callback();
               }
               else if(settings.transition == 'slide down') {
                 $currentMenu
@@ -710,7 +710,7 @@ module.exports = function(parameters) {
             module.set.active();
             module.animate.show(function() {
               if( module.can.click() ) {
-                module.bind.intent();
+                setTimeout(module.bind.intent, 0);
               }
               module.set.visible();
             });
