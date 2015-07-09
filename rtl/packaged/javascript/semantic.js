@@ -5092,8 +5092,8 @@ $.fn.dropdown = function(parameters) {
           },
           animated: function($subMenu) {
             return ($subMenu)
-              ? $subMenu.is(':animated') || $subMenu.transition && $subMenu.transition('is animating')
-              : $menu.is(':animated') || $menu.transition && $menu.transition('is animating')
+              ? $subMenu.transition && $subMenu.transition('is animating')
+              : $menu.transition && $menu.transition('is animating')
             ;
           },
           visible: function($subMenu) {
@@ -7445,7 +7445,7 @@ $.fn.popup = function(parameters) {
 
         is: {
           animating: function() {
-            return ( $popup.is(':animated') || $popup.hasClass(className.animating) );
+            return $popup.hasClass(className.animating);
           },
           visible: function() {
             return $popup.is(':visible');

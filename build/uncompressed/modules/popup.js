@@ -583,7 +583,7 @@ $.fn.popup = function(parameters) {
 
         is: {
           animating: function() {
-            return ( $popup.is(':animated') || $popup.hasClass(className.animating) );
+            return $popup.hasClass(className.animating);
           },
           visible: function() {
             return $popup.is(':visible');
