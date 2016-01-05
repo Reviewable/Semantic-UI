@@ -7469,18 +7469,11 @@ i.counterclockwise.rotated.icon {
 /*-------------------
         Square
 --------------------*/
-i.square.icon {
-  width: 2em;
-  height: 2em;
-  padding: 0.5em 0.35em !important;
-  -webkit-box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0em 0em 0em 0.1em rgba(0, 0, 0, 0.1) inset;
-  vertical-align: baseline;
+i.icon.square.outline:before {
+  content: "\f096";
 }
-i.square.inverted.icon {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+i.icon.square:before {
+  content: "\f0c8";
 }
 /*-------------------
       Inverted
