@@ -136,7 +136,7 @@
   border-top-color: #F6EFC3;
 }
 .ui.items .item .star.label:hover .icon {
-  color: #AC9400;
+  color: #ac9400;
 }
 /* active */
 .ui.items .item .star.label.active::after {
@@ -146,7 +146,7 @@
   border-top-color: #F6EFC3;
 }
 .ui.items .item .star.label.active .icon {
-  color: #AC9400;
+  color: #ac9400;
 }
 /*-----like----- */
 /* hover */
@@ -157,7 +157,7 @@
   border-top-color: #F5E1E2;
 }
 .ui.items .item .like.label:hover .icon {
-  color: #EF404A;
+  color: #ef404a;
 }
 /* active */
 .ui.items .item .like.label.active::after {
@@ -167,7 +167,7 @@
   border-top-color: #F5E1E2;
 }
 .ui.items .item .like.label.active .icon {
-  color: #EF404A;
+  color: #ef404a;
 }
 /*--------------
       Extra

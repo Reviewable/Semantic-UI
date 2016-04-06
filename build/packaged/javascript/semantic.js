@@ -6934,7 +6934,7 @@ $.fn.popup = function(parameters) {
           module.debug('Initializing module', $module);
           if(settings.on == 'click') {
             $module
-              .on('click', module.toggle)
+              .on('click' + eventNamespace, module.toggle)
             ;
           }
           else {
