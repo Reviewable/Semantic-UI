@@ -979,7 +979,7 @@ module.exports.settings = {
   selector : {
     menu    : '.menu',
     submenu : '> .menu',
-    item    : '.menu > .item',
+    item    : '.menu > .item, .menu > :not(.menu) > .item, .menu > :not(.menu) > :not(.menu) > .item',
     text    : '> .text',
     input   : '> input[type="hidden"]'
   },
