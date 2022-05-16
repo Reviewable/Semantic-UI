@@ -6,6 +6,7 @@ test/coverage/
 coverage/
 semantic.config
 semanticui/
+rtl/
 
 # Numerous always-ignore extensions
 *.diff

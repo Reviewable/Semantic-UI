@@ -52,9 +52,7 @@
   margin: 0em 0.5em 0em 0em;
   -webkit-transition: -webkit-transform 0.2s ease, opacity 0.2s ease;
   -moz-transition: -moz-transform 0.2s ease, opacity 0.2s ease;
-  transition: transform 0.2s ease,
-    opacity 0.2s ease
-  ;
+  transition: transform 0.2s ease, opacity 0.2s ease;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);

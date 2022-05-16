@@ -377,15 +377,15 @@ body > .ui.grid {
   width: 100%;
   margin-top: 0em;
   padding-top: 0em;
-  -webkit-box-shadow: 0px -1px 0px 0px #dfdfdf;
-          box-shadow: 0px -1px 0px 0px #dfdfdf;
+  -webkit-box-shadow: 0px -1px 0px 0px #DFDFDF;
+          box-shadow: 0px -1px 0px 0px #DFDFDF;
 }
 .ui.celled.grid > .column:not(.row),
 .ui.celled.grid > .row > .column {
   display: table-cell;
   padding: 0.75em;
-  -webkit-box-shadow: -1px 0px 0px 0px #dfdfdf;
-          box-shadow: -1px 0px 0px 0px #dfdfdf;
+  -webkit-box-shadow: -1px 0px 0px 0px #DFDFDF;
+          box-shadow: -1px 0px 0px 0px #DFDFDF;
 }
 .ui.celled.grid > .column:first-child,
 .ui.celled.grid > .row > .column:first-child {
@@ -568,12 +568,12 @@ body > .ui.grid {
   .ui.twelve.column.doubling.grid > .row > .column,
   .ui.twelve.column.doubling.grid > .column,
   .ui.grid > .twelve.column.doubling.row > .column {
-    width: 33.3333333333333%;
+    width: 33.33333333%;
   }
   .ui.fourteen.column.doubling.grid > .row > .column,
   .ui.fourteen.column.doubling.grid > .column,
   .ui.grid > .fourteen.column.doubling.row > .column {
-    width: 33.3333333333333%;
+    width: 33.33333333%;
   }
   .ui.sixteen.column.doubling.grid > .row > .column,
   .ui.sixteen.column.doubling.grid > .column,
@@ -636,7 +636,7 @@ body > .ui.grid {
   .ui.fourteen.column.doubling.grid > .row > .column,
   .ui.fourteen.column.doubling.grid > .column,
   .ui.grid > .fourteen.column.doubling.row > .column {
-    width: 14.28571428571429%;
+    width: 14.28571429%;
   }
   .ui.sixteen.column.doubling.grid > .row > .column,
   .ui.sixteen.column.doubling.grid > .column,

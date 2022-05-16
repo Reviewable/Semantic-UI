@@ -31,8 +31,7 @@
   text-align: center;
   text-decoration: none;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.05)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: -moz- oldlinear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   border-radius: 0.25em;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset;
@@ -69,8 +68,7 @@
 ---------------*/
 .ui.button:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.08)));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
+  background-image: -moz- oldlinear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
   color: rgba(0, 0, 0, 0.7);
 }
@@ -399,12 +397,9 @@
 .ui.button > .icon {
   margin-right: 0.6em;
   line-height: 1;
-  -webkit-transition: opacity 0.1s ease
-  ;
-  -moz-transition: opacity 0.1s ease
-  ;
-  transition: opacity 0.1s ease
-  ;
+  -webkit-transition: opacity 0.1s ease;
+  -moz-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
 }
 /*******************************
            Variations
@@ -876,7 +871,7 @@
 }
 .ui.\38.buttons > .button,
 .ui.eight.buttons > .button {
-  width: 12.500%;
+  width: 12.5%;
 }
 .ui.\39.buttons > .button,
 .ui.nine.buttons > .button {
@@ -930,7 +925,7 @@
 }
 .ui.\38.vertical.buttons > .button,
 .ui.eight.vertical.buttons > .button {
-  height: 12.500%;
+  height: 12.5%;
 }
 .ui.\39.vertical.buttons > .button,
 .ui.nine.vertical.buttons > .button {

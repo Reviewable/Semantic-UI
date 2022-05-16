@@ -228,15 +228,9 @@
      -moz-transform: none;
       -ms-transform: none;
           transform: none;
-  -webkit-transition: background 0.3s ease 0s,
-    left 0.3s ease 0s
-  ;
-     -moz-transition: background 0.3s ease 0s,
-    left 0.3s ease 0s
-  ;
-          transition: background 0.3s ease 0s,
-    left 0.3s ease 0s
-  ;
+  -webkit-transition: background 0.3s ease 0s, left 0.3s ease 0s;
+     -moz-transition: background 0.3s ease 0s, left 0.3s ease 0s;
+          transition: background 0.3s ease 0s, left 0.3s ease 0s;
 }
 /* Selected Slider Toggle */
 .ui.slider.checkbox input:checked ~ .box:before,
@@ -303,15 +297,9 @@
   height: 0.75em;
   background-color: #D95C5C;
   border-radius: 50rem;
-  -webkit-transition: background 0.3s ease 0s,
-    left 0.3s ease 0s
-  ;
-     -moz-transition: background 0.3s ease 0s,
-    left 0.3s ease 0s
-  ;
-          transition: background 0.3s ease 0s,
-    left 0.3s ease 0s
-  ;
+  -webkit-transition: background 0.3s ease 0s, left 0.3s ease 0s;
+     -moz-transition: background 0.3s ease 0s, left 0.3s ease 0s;
+          transition: background 0.3s ease 0s, left 0.3s ease 0s;
 }
 /* Active */
 .ui.toggle.checkbox:active .box:before,

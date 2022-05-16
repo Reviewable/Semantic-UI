@@ -102,25 +102,7 @@ module.exports = function(grunt) {
       'rtlcss:rtl'
     ],
 
-    docTasks = [
-
-      // copies examples over to docs
-      'copy:examplesToDocs',
-
-      // creates release zip
-      'compress:everything',
-
-      // copies files over to docs
-      'copy:buildToDocs',
-
-      // generate code docs
-      'docco:generate',
-
-      // copies spec files over to docs
-      'copy:specToDocs'
-    ],
-
-    buildTasks     = releaseTasks.concat(rtlTasks).concat(docTasks),
+    buildTasks     = releaseTasks.concat(rtlTasks),
     testWatchTasks = testTasks.concat(watchTasks),
 
     setWatchTests = function(action, filePath) {
@@ -361,7 +343,6 @@ module.exports = function(grunt) {
             src    : [
               '**/*.js',
               'images/*',
-              'fonts/*'
             ],
             dest : 'docs/build/uncompressed'
           },
@@ -371,7 +352,6 @@ module.exports = function(grunt) {
             cwd    : 'src/',
             src    : [
               'images/*',
-              'fonts/*'
             ],
             dest : 'docs/build/minified'
           },
@@ -382,7 +362,6 @@ module.exports = function(grunt) {
             cwd    : 'src/',
             src    : [
               'images/*',
-              'fonts/*'
             ],
             dest : 'docs/build/packaged'
           }
@@ -408,7 +387,6 @@ module.exports = function(grunt) {
             src    : [
               '**/*.js',
               'images/*',
-              'fonts/*'
             ],
             dest : 'build/uncompressed'
           },
@@ -418,7 +396,6 @@ module.exports = function(grunt) {
             cwd    : 'src/',
             src    : [
               'images/*',
-              'fonts/*'
             ],
             dest : 'build/minified'
           },
@@ -429,7 +406,6 @@ module.exports = function(grunt) {
             cwd    : 'src/',
             src    : [
               'images/*',
-              'fonts/*'
             ],
             dest : 'build/packaged'
           }
@@ -700,7 +676,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('release', releaseTasks);
   grunt.registerTask('rtl', rtlTasks);
-  grunt.registerTask('docs', docTasks);
   grunt.registerTask('build', buildTasks);
   grunt.registerTask('reset', resetTasks);
 
