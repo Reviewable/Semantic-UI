@@ -16,10 +16,10 @@
   min-height: 18px;
   margin: 1em 0em;
   height: auto;
-  background-color: #EFEFEF;
+  background-color: var(--sui-white-4);
   padding: 1em;
   line-height: 1.33;
-  color: rgba(0, 0, 0, 0.6);
+  color: hsl(var(--sui-lightness-lowest), 0.6);
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
   -moz-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
@@ -138,8 +138,8 @@
   margin-right: -1px;
   margin-bottom: -1px;
   border-radius: 0.325em 0.325em 0em 0em;
-  -webkit-box-shadow: 0em 0em 0em 1px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0em 0em 0em 1px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+  box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
 }
 .ui.attached + .ui.attached.message:not(.top):not(.bottom) {
   margin-top: -1px;
@@ -180,58 +180,58 @@
     Inverted
 ---------------*/
 .ui.inverted.message {
-  background-color: rgba(255, 255, 255, 0.05);
-  color: rgba(255, 255, 255, 0.95);
+  background-color: hsl(var(--sui-lightness-highest), 0.05);
+  color: hsl(var(--sui-lightness-highest), 0.95);
 }
 /*--------------
     Floating
 ---------------*/
 .ui.floating.message {
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset;
+  -webkit-box-shadow: 0px 1px 3px 0px hsl(var(--sui-lightness-lowest), 0.1), 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.05) inset;
+  box-shadow: 0px 1px 3px 0px hsl(var(--sui-lightness-lowest), 0.1), 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.05) inset;
 }
 /*--------------
      Colors
 ---------------*/
 .ui.black.message {
-  background-color: #333333;
-  color: rgba(255, 255, 255, 0.95);
+  background-color: var(--sui-black-3);
+  color: hsl(var(--sui-lightness-highest), 0.95);
 }
 /*--------------
      Types
 ---------------*/
 .ui.blue.message,
 .ui.info.message {
-  background-color: #E6F4F9;
-  color: #4D8796;
+  background-color: var(--sui-blue-6);
+  color: var(--sui-blue-1);
 }
 /* Green Text Block */
 .ui.green.message {
-  background-color: #DEFCD5;
-  color: #52A954;
+  background-color: var(--sui-green-10);
+  color: var(--sui-green-2);
 }
 /* Yellow Text Block */
 .ui.yellow.message,
 .ui.warning.message {
-  background-color: #F6F3D5;
-  color: #96904D;
+  background-color: var(--sui-yellow-7);
+  color: var(--sui-yellow-3);
 }
 /* Red Text Block */
 .ui.red.message {
-  background-color: #F1D7D7;
-  color: #A95252;
+  background-color: var(--sui-red-17);
+  color: var(--sui-red-2);
 }
 /* Success Text Block */
 .ui.success.message,
 .ui.positive.message {
-  background-color: #DEFCD5;
-  color: #52A954;
+  background-color: var(--sui-green-10);
+  color: var(--sui-green-2);
 }
 /* Error Text Block */
 .ui.error.message,
 .ui.negative.message {
-  background-color: #F1D7D7;
-  color: #A95252;
+  background-color: var(--sui-red-17);
+  color: var(--sui-red-2);
 }
 /*--------------
      Sizes

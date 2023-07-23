@@ -1,0 +1,45 @@
+:root {
+  --sui-text-light: var(--sui-lofi-black-d-1);
+  --sui-lightness-lowest: 0, 0%, 100%;
+  --sui-lightness-highest: 0, 0%, 0%;
+  --sui-lofi-white-d-1: #434343;
+  --sui-lofi-white-l-1: #313131;
+  --sui-lofi-black-d-1: #f8f8f8;
+  --sui-lofi-black-l-1: #e3e3e3;
+  --sui-lofi-grey-d-1: #E8E8E8;
+  --sui-lofi-grey-d-2: #DDDDDD;
+  --sui-lofi-grey-d-3: #AAAAAA;
+  --sui-lofi-grey-l-1: #808080;
+  --sui-lofi-grey-l-2: #555555;
+  --sui-lofi-green-d-1: #119000;
+  --sui-lofi-green-d-2: #5BBD72;
+  --sui-lofi-green-l-1: #A1CF64;
+  --sui-lofi-green-l-2: #DEFCD5;
+  --sui-lofi-red-d-1: #CD2929;
+  --sui-lofi-red-d-2: #FF4121;
+  --sui-lofi-red-d-3: #D95C5C;
+  --sui-lofi-red-l-1: #F1D7D7;
+  --sui-lofi-orange-d-1: #F05940;
+  --sui-lofi-orange-l-1: #DA683B;
+  --sui-lofi-yellow-d-1: #7D6C00;
+  --sui-lofi-yellow-d-2: #96904D;
+  --sui-lofi-yellow-l-1: #FFCB08;
+  --sui-lofi-yellow-l-2: #F6EFC3;
+  --sui-lofi-blue-d-1: #0AA5DF;
+  --sui-lofi-blue-l-1: #6ECFF5;
+  --sui-lofi-purple-d-1: #3E3773;
+  --sui-lofi-purple-l-1: #564F8A;
+  --sui-lofi-teal-d-1: #00847E;
+  --sui-lofi-teal-l-1: #00B5AD;
+}
+body#example {
+  color: var(--sui-text-light) !important;
+  background: var(--sui-lofi-white-d-1) !important;
+}
+#example > .segment {
+  color: var(--sui-text-light) !important;
+  background: var(--sui-lofi-white-d-1) !important;
+}
+.inverted {
+  background-color: var(--sui-lofi-white-d-1) !important;
+}

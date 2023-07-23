@@ -35,3 +35,6 @@ Thumbs.db
 nbproject
 *.sublime-project
 *.sublime-workspace
+
+sorted.less
+sorted.css

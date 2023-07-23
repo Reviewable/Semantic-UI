@@ -12,17 +12,17 @@
            Chat Room
 *******************************/
 .ui.chatroom {
-  background-color: #F8F8F8;
+  background-color: var(--sui-white-10);
   width: 330px;
   height: 370px;
   padding: 0px;
 }
 .ui.chatroom .room {
   position: relative;
-  background-color: #FFFFFF;
+  background-color: var(--sui-white-15);
   overflow: hidden;
   height: 286px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
   border-top: none;
   border-bottom: none;
 }
@@ -33,9 +33,9 @@
 /* Chat Room Actions */
 .ui.chatroom .actions {
   overflow: hidden;
-  background-color: #EEEEEE;
+  background-color: var(--sui-white-3);
   padding: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
   border-radius: 5px 5px 0px 0px;
 }
 .ui.chatroom .actions .button {
@@ -47,8 +47,8 @@
   float: left;
   margin-left: 6px;
   font-size: 11px;
-  color: #AAAAAA;
-  text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.8);
+  color: var(--sui-grey-10);
+  text-shadow: 0px -1px 0px hsl(var(--sui-lightness-highest), 0.8);
   line-height: 28px;
 }
 .ui.chatroom .actions .message .loader {
@@ -64,7 +64,7 @@
 }
 .ui.chatroom .log .message {
   padding: 3px 0px;
-  border-top: 1px dotted #DADADA;
+  border-top: 1px dotted var(--sui-grey-18);
 }
 .ui.chatroom .log .message:first-child {
   border-top: none;
@@ -72,11 +72,11 @@
 /* status event */
 .ui.chatroom .status {
   padding: 5px 0px;
-  color: #AAAAAA;
+  color: var(--sui-grey-10);
   font-size: 12px;
   font-style: italic;
   line-height: 1.33;
-  border-top: 1px dotted #DADADA;
+  border-top: 1px dotted var(--sui-grey-18);
 }
 .ui.chatroom .log .status:first-child {
   border-top: none;
@@ -104,15 +104,15 @@
   margin: -1px 0px;
   font-size: 11px;
   padding: 10px 0px;
-  border-top: 1px solid #F8F8F8;
-  border-bottom: 1px solid #F8F8F8;
+  border-top: 1px solid var(--sui-white-10);
+  border-bottom: 1px solid var(--sui-white-10);
 }
 .ui.chatroom .log .divider .rule {
   top: 50%;
   width: 15%;
 }
 .ui.chatroom .log .divider .label {
-  color: #777777;
+  color: var(--sui-grey-5);
   margin: 0px;
 }
 /* Chat Room User List */
@@ -122,16 +122,16 @@
   overflow-x: hidden;
   overflow-y: auto;
   float: left;
-  background-color: #EEEEEE;
-  border-left: 1px solid #DDDDDD;
+  background-color: var(--sui-white-3);
+  border-left: 1px solid var(--sui-grey-19);
 }
 .ui.chatroom .room .list .user {
   display: table;
   padding: 3px 7px;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid var(--sui-grey-19);
 }
 .ui.chatroom .room .list .user:hover {
-  background-color: #F8F8F8;
+  background-color: var(--sui-white-10);
 }
 .ui.chatroom .room .list .image {
   display: table-cell;
@@ -161,9 +161,9 @@
 }
 /* Chat Room Talk Input */
 .ui.chatroom .talk {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
   padding: 5px 0px 0px;
-  background-color: #EEEEEE;
+  background-color: var(--sui-white-3);
   border-radius: 0px 0px 5px 5px;
 }
 .ui.chatroom .talk .avatar,
@@ -179,16 +179,16 @@
   border-radius: 500rem;
 }
 .ui.chatroom .talk input {
-  border: 1px solid #CCCCCC;
+  border: 1px solid var(--sui-grey-16);
   margin: 0px;
   width: 196px;
   height: 14px;
   padding: 8px 5px;
   font-size: 12px;
-  color: #555555;
+  color: var(--sui-grey-2);
 }
 .ui.chatroom .talk input.focus {
-  border: 1px solid #AAAAAA;
+  border: 1px solid var(--sui-grey-10);
 }
 .ui.chatroom .send {
   width: 80px;
@@ -197,8 +197,8 @@
   padding: 4px 12px;
   font-size: 12px;
   line-height: 23px;
-  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 0 0 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+  box-shadow: 0 0 0 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
   border-radius: 0 5px 5px 0;
 }
 .ui.chatroom .talk .log-in.button {

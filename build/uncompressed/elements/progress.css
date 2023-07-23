@@ -12,10 +12,10 @@
          Progress Bar
 *******************************/
 .ui.progress {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
   width: 100%;
   height: 35px;
-  background-color: #FAFAFA;
+  background-color: var(--sui-white-12);
   padding: 5px;
   border-radius: 0.3125em;
   -webkit-box-sizing: border-box;
@@ -26,7 +26,7 @@
 .ui.progress .bar {
   display: inline-block;
   height: 100%;
-  background-color: #CCCCCC;
+  background-color: var(--sui-grey-16);
   border-radius: 3px;
   -webkit-transition: width 1s ease-in-out, background-color 1s ease-out;
   -moz-transition: width 1s ease-in-out, background-color 1s ease-out;
@@ -39,7 +39,7 @@
   Successful
 ---------------*/
 .ui.successful.progress .bar {
-  background-color: #73E064 !important;
+  background-color: var(--sui-green-8) !important;
 }
 .ui.successful.progress .bar,
 .ui.successful.progress .bar::after {
@@ -48,7 +48,7 @@
   animation: none !important;
 }
 .ui.warning.progress .bar {
-  background-color: #E96633 !important;
+  background-color: var(--sui-orange-2) !important;
 }
 .ui.warning.progress .bar,
 .ui.warning.progress .bar::after {
@@ -60,7 +60,7 @@
      Failed
 ---------------*/
 .ui.failed.progress .bar {
-  background-color: #DF9BA4 !important;
+  background-color: var(--sui-red-13) !important;
 }
 .ui.failed.progress .bar,
 .ui.failed.progress .bar::after {
@@ -82,7 +82,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: #FFFFFF;
+  background: var(--sui-white-15);
   border-radius: 3px;
   -webkit-animation: progress-active 2s ease-out infinite;
   -moz-animation: progress-active 2s ease-out infinite;
@@ -174,30 +174,30 @@
      Colors
 ---------------*/
 .ui.blue.progress .bar {
-  background-color: #6ECFF5;
+  background-color: var(--sui-blue-4);
 }
 .ui.black.progress .bar {
-  background-color: #5C6166;
+  background-color: var(--sui-black-7);
 }
 .ui.green.progress .bar {
-  background-color: #A1CF64;
+  background-color: var(--sui-green-7);
 }
 .ui.red.progress .bar {
-  background-color: #EF4D6D;
+  background-color: var(--sui-red-9);
 }
 .ui.purple.progress .bar {
-  background-color: #564F8A;
+  background-color: var(--sui-purple-3);
 }
 .ui.teal.progress .bar {
-  background-color: #00B5AD;
+  background-color: var(--sui-teal-3);
 }
 /*--------------
     Striped
 ---------------*/
 .ui.progress.striped .bar {
   background-size: 30px 30px;
-  background-image: -moz- oldlinear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz- oldlinear-gradient(315deg, hsl(var(--sui-lightness-highest), 0.15) 25%, transparent 25%, transparent 50%, hsl(var(--sui-lightness-highest), 0.15) 50%, hsl(var(--sui-lightness-highest), 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, hsl(var(--sui-lightness-highest), 0.15) 25%, transparent 25%, transparent 50%, hsl(var(--sui-lightness-highest), 0.15) 50%, hsl(var(--sui-lightness-highest), 0.15) 75%, transparent 75%, transparent);
 }
 .ui.progress.active.striped .bar:after {
   -webkit-animation: none;

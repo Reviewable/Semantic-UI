@@ -20,10 +20,7 @@
     Comments
 ---------------*/
 
-.ui.comments {
-
-
-}
+.ui.comments {}
 .ui.comments a {
   cursor: pointer;
 }
@@ -84,7 +81,7 @@
 .ui.comments .comment .metadata {
   display: inline-block;
   margin-left: 0.3em;
-  color: rgba(0, 0, 0, 0.4);
+  color: hsl(var(--sui-lightness-lowest), 0.4);
 }
 .ui.comments .comment .metadata > * {
   display: inline-block;
@@ -110,11 +107,11 @@
 .ui.comments .comment .actions a {
   display: inline-block;
   margin: 0em 0.3em 0em 0em;
-  color: rgba(0, 0, 0, 0.3);
+  color: hsl(var(--sui-lightness-lowest), 0.3);
 }
 .ui.comments .comment .actions a.active,
 .ui.comments .comment .actions a:hover {
-  color: rgba(0, 0, 0, 0.6);
+  color: hsl(var(--sui-lightness-lowest), 0.6);
 }
 
 /*--------------------
@@ -148,13 +145,13 @@
   padding-top: 0.5em;
   padding-bottom: 1em;
 }
-.ui.comments .comment .comments:before{
+.ui.comments .comment .comments:before {
   position: absolute;
   top: 0px;
   left: 0px;
 }
 /* One Deep */
-.ui.comments > .comment  .comments {
+.ui.comments > .comment .comments {
   margin-left: 2em;
 
 }
@@ -184,9 +181,9 @@
   margin-left: 2em !important;
   padding-left: 2em !important;
 
-  -webkit-box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: -1px 0px 0px hsl(var(--sui-lightness-lowest), 0.05);
+  -moz-box-shadow: -1px 0px 0px hsl(var(--sui-lightness-lowest), 0.05);
+  box-shadow: -1px 0px 0px hsl(var(--sui-lightness-lowest), 0.05);
 }
 
 /*--------------------

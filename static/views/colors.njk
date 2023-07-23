@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+css : 'comment'
+tags: views
+title : 'Comment'
+description : 'A comment view is used to display lists of user feedback to site content'
+type : 'UI View'
+---
+
+<div class="main container">
+
+  <h2 class="ui dividing header">Colors</h2>
+
+  <div class="ui segment">
+    {% for color in colors %}
+    <h3>{{color.name}}</h3>
+    <div class="ui grid">
+      <div class="row">
+        {% for shade in color.shades %}
+        <div class="column">
+          <div style="height: 30px; width: 30px; background-color: var({{shade.split(':')[0] }});">
+          </div>
+          <p class="ui small pointing label" style="margin-bottom: 4px;">
+            {{shade.split('-')[4].split(':')[0]}}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

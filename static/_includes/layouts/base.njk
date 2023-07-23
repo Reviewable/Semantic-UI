@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="image_src" type="image/jpeg" href="images/share.png" />
+  <!-- Site Properities -->
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}" />
+  <link
+    href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700'
+    rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="/build/packaged/css/semantic.css" id="style-link">
+  <link rel="stylesheet" type="text/css" href="/build/packaged/css/semantic.css"
+    id="secondary-style-link">
+  <link rel="stylesheet" type="text/css" href="/build/packaged/css/semantic.css"
+    id="third-style-link">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/semantic.css">
+  <script src=" /build/packaged/javascript/semantic.js"></script>
+</head>
+
+<body id="example" class="{{css}}" ontouchstart="">
+  <div class="ui transparent inverted main menu" style="position: sticky; top: 0;">
+    <div class="container">
+      <a class="launch item"><i class="icon list layout"></i> Content</a>
+      <div class="title item">
+        <b>
+          {{type}}:
+        </b>
+        {{title}}
+        <a href="/README" class="ui positive button">README</a>
+      </div>
+    </div>
+    <div class="segment">
+      <a href="/element" class="item">Elements</a>
+      {% for element in collections.elements %}
+      | <a href="{{element.url}}" class="item">{{element.fileSlug}}</a>
+      {% endfor %}
+      <br>
+      |<a href="/collection" class="item">Collections</a>
+      {% for element in collections.collections %}
+      | <a href="{{element.url}}" class="item">{{element.fileSlug}}</a>
+      {% endfor %}
+      <br>
+      |<a class="item">Views</a>
+      {% for element in collections.views %}
+      | <a href="{{element.url}}" class="item">{{element.fileSlug}}</a>
+      {% endfor %}
+      <br>
+    </div>
+    <button class="ui button stylemode" id="historical">
+      Show Historical Styles
+    </button>
+    <button class="ui button stylemode" id="hifi">
+      Show Modern Hi Fi Styles
+    </button>
+    <button class="ui button stylemode" id="lofi">
+      Show Modern Lo Fi Styles
+    </button>
+    <button class="ui button stylemode" id="darkmode">
+      Show Dark Mode Sample
+    </button>
+  </div>
+  </div>
+  {{ content | safe}}
+  <script>
+    const displayStyle = (ev) => {
+      let button = ev.target
+      const mode = button.id
+      stylemodeButtons.forEach(el => el.classList.remove('disabled'))
+      if (!button.classList) button = document.getElementById(mode)
+      button.classList.add('disabled')
+      switch (mode) {
+        case 'historical':
+          styleLink.setAttribute('href', '/build/historical/semantic.css');
+          secondaryStyleLink.setAttribute('href', '');
+          thirdStyleLink.setAttribute('href', '');
+          window.sessionStorage.setItem('style', 'historical')
+          break;
+        case 'hifi':
+          styleLink.setAttribute('href', '/build/packaged/css/semantic.css');
+          secondaryStyleLink.setAttribute('href', '');
+          thirdStyleLink.setAttribute('href', '');
+          window.sessionStorage.setItem('style', 'hifi')
+          break;
+        case 'lofi':
+          styleLink.setAttribute('href', '/build/packaged/css/semantic.css');
+          secondaryStyleLink.setAttribute('href', '/build/packaged/css/semantic.lofi.css');
+          thirdStyleLink.setAttribute('href', '');
+          window.sessionStorage.setItem('style', 'lofi')
+          break;
+        case 'darkmode':
+          styleLink.setAttribute('href', '/build/packaged/css/semantic.css');
+          secondaryStyleLink.setAttribute('href', '/build/packaged/css/semantic.lofi.css');
+          thirdStyleLink.setAttribute('href', '/build/packaged/css/semantic.dark.css');
+          window.sessionStorage.setItem('style', 'darkmode')
+          break;
+      }
+    }
+
+    const styleLink = document.getElementById('style-link');
+    const secondaryStyleLink = document.getElementById('secondary-style-link');
+    const thirdStyleLink = document.getElementById('third-style-link');
+    const stylemodeButtons = document.querySelectorAll('.stylemode');
+    stylemodeButtons.forEach(button => button.addEventListener('click', displayStyle));
+
+    const style = window.sessionStorage.getItem('style')
+    if (style) displayStyle({ target: { id: style } })
+
+  </script>
+</body>
+
+</html>

@@ -34,7 +34,7 @@
   width: 1em;
   height: auto;
   padding: 0em;
-  color: rgba(0, 0, 0, 0.15);
+  color: hsl(var(--sui-lightness-lowest), 0.15);
   font-weight: normal;
   font-style: normal;
 }
@@ -76,12 +76,12 @@
   font-family: 'Icons';
 }
 .ui.heart.rating .active.icon {
-  color: #EF404A !important;
+  color: var(--sui-red-7) !important;
 }
 /* Hovered */
 .ui.heart.rating .hover.icon,
 .ui.heart.rating .active.hover.icon {
-  color: #FF2733 !important;
+  color: var(--sui-red-6) !important;
 }
 /*******************************
              States
@@ -95,7 +95,7 @@
 }
 /* active icons */
 .ui.rating .active.icon {
-  color: #FFCB08 !important;
+  color: var(--sui-yellow-4) !important;
 }
 /*-------------------
         Hover
@@ -108,7 +108,7 @@
 .ui.rating .icon.hover,
 .ui.rating .icon.hover.active {
   opacity: 1;
-  color: #FFB70A !important;
+  color: var(--sui-yellow-5) !important;
 }
 /*******************************
           Variations

@@ -17,7 +17,7 @@
 .ui.input {
   display: inline-block;
   position: relative;
-  color: rgba(0, 0, 0, 0.7);
+  color: hsl(var(--sui-lightness-lowest), 0.7);
 }
 .ui.input input {
   width: 100%;
@@ -25,15 +25,15 @@
   margin: 0em;
   padding: 0.65em 1em;
   font-size: 1em;
-  background-color: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: var(--sui-white-15);
+  border: 1px solid hsl(var(--sui-lightness-lowest), 0.15);
   outline: none;
-  color: rgba(0, 0, 0, 0.7);
+  color: hsl(var(--sui-lightness-lowest), 0.7);
   border-radius: 0.3125em;
   -webkit-transition: background-color 0.3s ease-out, -webkit-box-shadow 0.2s ease, border-color 0.2s ease;
   -moz-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
   transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: hsl(var(--sui-lightness-highest), 0);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -44,10 +44,10 @@
 ---------------------*/
 /* browsers require these rules separate */
 .ui.input::-webkit-input-placeholder {
-  color: #BBBBBB;
+  color: var(--sui-grey-13);
 }
 .ui.input::-moz-placeholder {
-  color: #BBBBBB;
+  color: var(--sui-grey-13);
 }
 /*******************************
             States
@@ -57,8 +57,8 @@
 ---------------------*/
 .ui.input input:active,
 .ui.input.down input {
-  border-color: rgba(0, 0, 0, 0.3);
-  background-color: #FAFAFA;
+  border-color: hsl(var(--sui-lightness-lowest), 0.3);
+  background-color: var(--sui-white-12);
 }
 /*--------------------
         Loading
@@ -75,37 +75,37 @@
 ---------------------*/
 .ui.input.focus input,
 .ui.input input:focus {
-  border-color: rgba(0, 0, 0, 0.2);
-  color: rgba(0, 0, 0, 0.85);
+  border-color: hsl(var(--sui-lightness-lowest), 0.2);
+  color: hsl(var(--sui-lightness-lowest), 0.85);
 }
 .ui.input.focus input input::-webkit-input-placeholder,
 .ui.input input:focus input::-webkit-input-placeholder {
-  color: #AAAAAA;
+  color: var(--sui-grey-10);
 }
 .ui.input.focus input input::-moz-placeholder,
 .ui.input input:focus input::-moz-placeholder {
-  color: #AAAAAA;
+  color: var(--sui-grey-10);
 }
 /*--------------------
         Error
 ---------------------*/
 .ui.input.error input {
-  background-color: #FFFAFA;
-  border-color: #E7BEBE;
-  color: #D95C5C;
+  background-color: var(--sui-red-24);
+  border-color: var(--sui-red-15);
+  color: var(--sui-red-8);
 }
 /* Error Placeholder */
 .ui.input.error input ::-webkit-input-placeholder {
-  color: rgba(255, 80, 80, 0.4);
+  color: var(--sui-red-16);
 }
 .ui.input.error input ::-moz-placeholder {
-  color: rgba(255, 80, 80, 0.4);
+  color: var(--sui-red-16);
 }
 .ui.input.error input :focus::-webkit-input-placeholder {
-  color: rgba(255, 80, 80, 0.7);
+  color: var(--sui-red-14);
 }
 .ui.input.error input :focus::-moz-placeholder {
-  color: rgba(255, 80, 80, 0.7);
+  color: var(--sui-red-14);
 }
 /*******************************
            Variations

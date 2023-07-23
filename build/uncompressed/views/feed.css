@@ -71,11 +71,11 @@
 .ui.feed .content .date {
   float: right;
   padding-left: 1em;
-  color: rgba(0, 0, 0, 0.4);
+  color: hsl(var(--sui-lightness-lowest), 0.4);
 }
 /* Summary */
 .ui.feed .content .summary {
-  color: rgba(0, 0, 0, 0.75);
+  color: hsl(var(--sui-lightness-lowest), 0.75);
 }
 .ui.feed .content .summary img {
   display: inline-block;
@@ -87,7 +87,7 @@
 .ui.feed .content .extra {
   margin: 1em 0em 0em;
   padding: 0.5em 0em 0em;
-  color: rgba(0, 0, 0, 0.5);
+  color: hsl(var(--sui-lightness-lowest), 0.5);
 }
 .ui.feed .content .extra.images img {
   display: inline-block;
@@ -96,7 +96,7 @@
 }
 .ui.feed .content .extra.text {
   padding: 0.5em 1em;
-  border-left: 0.2em solid rgba(0, 0, 0, 0.1);
+  border-left: 0.2em solid hsl(var(--sui-lightness-lowest), 0.1);
 }
 /*******************************
             Variations

@@ -373,9 +373,8 @@ body > .ui.grid {
 .ui.divided.grid > .row > .column {
   display: table-cell;
   box-shadow:
-    -1px 0px 0px 0px rgba(0, 0, 0, 0.1),
-    -2px 0px 0px 0px rgba(255, 255, 255, 0.8)
-  ;
+    -1px 0px 0px 0px hsl(var(--sui-lightness-lowest), 0.1),
+    -2px 0px 0px 0px hsl(var(--sui-lightness-highest), 0.8);
 }
 .ui.divided.grid > .column.row {
   display: table;
@@ -388,9 +387,8 @@ body > .ui.grid {
 /* Vertically Divided */
 .ui.vertically.divided.grid > .row {
   box-shadow:
-    0px -1px 0px 0px rgba(0, 0, 0, 0.1),
-    0px -2px 0px 0px rgba(255, 255, 255, 0.8) !important
-  ;
+    0px -1px 0px 0px hsl(var(--sui-lightness-lowest), 0.1),
+    0px -2px 0px 0px hsl(var(--sui-lightness-highest), 0.8) !important;
 }
 .ui.vertically.divided.grid > .row > .column,
 .ui.vertically.divided.grid > .column:not(.row),
@@ -408,7 +406,7 @@ body > .ui.grid {
   width: 100%;
   margin-left: 0% !important;
   margin-right: 0% !important;
-  box-shadow: 0px 0px 0px 1px #DFDFDF;
+  box-shadow: 0px 0px 0px 1px var(--sui-grey-21);
 }
 .ui.celled.grid > .row,
 .ui.celled.grid > .column.row,
@@ -417,13 +415,13 @@ body > .ui.grid {
   width: 100%;
   margin-top: 0em;
   padding-top: 0em;
-  box-shadow: 0px -1px 0px 0px #DFDFDF;
+  box-shadow: 0px -1px 0px 0px var(--sui-grey-21);
 }
 .ui.celled.grid > .column:not(.row),
 .ui.celled.grid > .row > .column {
   display: table-cell;
   padding: 0.75em;
-  box-shadow: -1px 0px 0px 0px #DFDFDF;
+  box-shadow: -1px 0px 0px 0px var(--sui-grey-21);
 }
 .ui.celled.grid > .column:first-child,
 .ui.celled.grid > .row > .column:first-child {
@@ -515,7 +513,7 @@ body > .ui.grid {
 -----------------------*/
 
 /* Mobile Only Hide */
-@media only screen and ( max-width : 767px ) {
+@media only screen and (max-width : 767px) {
   .ui.tablet:not(.mobile).only.grid,
   .ui.grid > .tablet:not(.mobile).only.row,
   .ui.grid > .tablet:not(.mobile).only.column,
@@ -530,7 +528,7 @@ body > .ui.grid {
   }
 }
 /* Tablet Only Hide */
-@media only screen and (min-width: 768px) and (max-width: 991px ) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .ui.mobile:not(.tablet).only.grid,
   .ui.grid > .mobile:not(.tablet).only.row,
   .ui.grid > .mobile:not(.tablet).only.column,
@@ -546,7 +544,7 @@ body > .ui.grid {
 }
 
 /* Computer Only Hide */
-@media only screen and ( min-width : 992px) {
+@media only screen and (min-width : 992px) {
   .ui.mobile:not(.computer).only.grid,
   .ui.grid > .mobile:not(.computer).only.row,
   .ui.grid > .mobile:not(.computer).only.column,
@@ -716,7 +714,7 @@ body > .ui.grid {
   }
   .ui.stackable.divided.grid .column,
   .ui.stackable.celled.grid .column {
-    border-top: 1px dotted rgba(0, 0, 0, 0.1);
+    border-top: 1px dotted hsl(var(--sui-lightness-lowest), 0.1);
   }
   .ui.stackable.grid > .row:first-child > .column:first-child,
   .ui.stackable.grid > .column:first-child {

@@ -19,9 +19,9 @@
   -webkit-transition: border-radius 0.1s ease, width 0.2s ease;
   -moz-transition: border-radius 0.1s ease, width 0.2s ease;
   transition: border-radius 0.1s ease, width 0.2s ease;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
+  -moz-tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
+  tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
 }
 /*******************************
             Content
@@ -35,13 +35,13 @@
   display: none;
   top: 100%;
   margin: 0em;
-  background-color: #FFFFFF;
+  background-color: var(--sui-white-15);
   min-width: 100%;
   white-space: nowrap;
   font-size: 0.875em;
   text-shadow: none;
-  -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  box-shadow: 0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
   border-radius: 0px 0px 0.325em 0.325em;
   -webkit-transition: opacity 0.2s ease;
   -moz-transition: opacity 0.2s ease;
@@ -94,11 +94,11 @@
 .ui.dropdown .menu .item {
   cursor: pointer;
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid hsl(var(--sui-lightness-lowest), 0.05);
   height: auto;
   font-size: 0.875em;
   display: block;
-  color: rgba(0, 0, 0, 0.75);
+  color: hsl(var(--sui-lightness-lowest), 0.75);
   padding: 0.85em 1em !important;
   font-size: 0.875rem;
   text-transform: none;
@@ -142,7 +142,7 @@
 ----------------------*/
 /* Menu Item Hover */
 .ui.dropdown .menu .item:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: hsl(var(--sui-lightness-lowest), 0.02);
   z-index: 12;
 }
 /*--------------------
@@ -150,7 +150,7 @@
 ----------------------*/
 /* Menu Item Selected */
 .ui.dropdown .menu .item.selected {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: hsl(var(--sui-lightness-lowest), 0.02);
   z-index: 12;
 }
 /*--------------------
@@ -158,7 +158,7 @@
 ----------------------*/
 /* Menu Item Active */
 .ui.dropdown .menu .active.item {
-  background-color: rgba(0, 0, 0, 0.06) !important;
+  background-color: hsl(var(--sui-lightness-lowest), 0.06) !important;
   border-left: none;
   border-color: transparent !important;
   -webkit-box-shadow: none;
@@ -172,11 +172,11 @@
 ----------------------*/
 .ui.dropdown > .default.text,
 .ui.default.dropdown > .text {
-  color: rgba(0, 0, 0, 0.5);
+  color: hsl(var(--sui-lightness-lowest), 0.5);
 }
 .ui.dropdown:hover > .default.text,
 .ui.default.dropdown:hover > .text {
-  color: rgba(0, 0, 0, 0.8);
+  color: hsl(var(--sui-lightness-lowest), 0.8);
 }
 /*--------------------
         Error
@@ -184,32 +184,32 @@
 .ui.dropdown.error,
 .ui.dropdown.error > .text,
 .ui.dropdown.error > .default.text {
-  color: #D95C5C !important;
+  color: var(--sui-red-8) !important;
 }
 .ui.selection.dropdown.error {
-  background-color: #FFFAFA;
-  -webkit-box-shadow: 0px 0px 0px 1px #e7bebe !important;
-  box-shadow: 0px 0px 0px 1px #e7bebe !important;
+  background-color: var(--sui-red-24);
+  -webkit-box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
+  box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
 }
 .ui.selection.dropdown.error:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #e7bebe !important;
-  box-shadow: 0px 0px 0px 1px #e7bebe !important;
+  -webkit-box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
+  box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
 }
 .ui.dropdown.error > .menu,
 .ui.dropdown.error > .menu .menu {
-  -webkit-box-shadow: 0px 0px 1px 1px #E7BEBE !important;
-  box-shadow: 0px 0px 1px 1px #E7BEBE !important;
+  -webkit-box-shadow: 0px 0px 1px 1px var(--sui-red-15) !important;
+  box-shadow: 0px 0px 1px 1px var(--sui-red-15) !important;
 }
 .ui.dropdown.error > .menu .item {
-  color: #D95C5C !important;
+  color: var(--sui-red-8) !important;
 }
 /* Item Hover */
 .ui.dropdown.error > .menu .item:hover {
-  background-color: #FFF2F2 !important;
+  background-color: var(--sui-red-23) !important;
 }
 /* Item Active */
 .ui.dropdown.error > .menu .active.item {
-  background-color: #FDCFCF !important;
+  background-color: var(--sui-red-19) !important;
 }
 /*******************************
            Variations
@@ -271,12 +271,12 @@
   display: inline-block;
   word-wrap: break-word;
   white-space: normal;
-  background-color: #FFFFFF;
+  background-color: var(--sui-white-15);
   padding: 0.65em 1em;
   line-height: 1.33;
-  color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+  color: hsl(var(--sui-lightness-lowest), 0.8);
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) !important;
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) !important;
   border-radius: 0.3125em !important;
 }
 .ui.selection.dropdown select {
@@ -300,8 +300,8 @@
   max-height: 312px;
   overflow-x: hidden;
   overflow-y: auto;
-  -webkit-box-shadow: 0px 1px 0px 1px #E0E0E0;
-  box-shadow: 0px 1px 0px 1px #E0E0E0;
+  -webkit-box-shadow: 0px 1px 0px 1px var(--sui-white-1);
+  box-shadow: 0px 1px 0px 1px var(--sui-white-1);
   border-radius: 0px 0px 0.325em 0.325em;
 }
 .ui.selection.dropdown .menu:after,
@@ -319,48 +319,48 @@
 ----------------------*/
 .ui.selection.dropdown.error,
 .ui.selection.dropdown.error .item {
-  background-color: #FFFAFA;
-  color: #D95C5C;
+  background-color: var(--sui-red-24);
+  color: var(--sui-red-8);
 }
 .ui.selection.dropdown.error {
-  -webkit-box-shadow: 0px 0px 0px 1px #e7bebe !important;
-  box-shadow: 0px 0px 0px 1px #e7bebe !important;
+  -webkit-box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
+  box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
 }
 .ui.selection.dropdown.error .menu {
-  -webkit-box-shadow: 0px 1px 0px 1px #E7BEBE;
-  box-shadow: 0px 1px 0px 1px #E7BEBE;
+  -webkit-box-shadow: 0px 1px 0px 1px var(--sui-red-15);
+  box-shadow: 0px 1px 0px 1px var(--sui-red-15);
   border-radius: 0px 0px 0.325em 0.325em;
 }
 /* Menu Item Active */
 .ui.selection.dropdown.error .menu .active.item {
-  background-color: #FDCFCF !important;
+  background-color: var(--sui-red-19) !important;
 }
 /* Hover */
 .ui.selection.dropdown:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2) !important;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2) !important;
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.2) !important;
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.2) !important;
 }
 .ui.selection.dropdown:hover .menu {
-  -webkit-box-shadow: 0px 1px 0px 1px #D3D3D3;
-  box-shadow: 0px 1px 0px 1px #D3D3D3;
+  -webkit-box-shadow: 0px 1px 0px 1px var(--sui-grey-17);
+  box-shadow: 0px 1px 0px 1px var(--sui-grey-17);
 }
 .ui.selection.dropdown:hover > .dropdown.icon {
   opacity: 1;
 }
 .ui.selection.dropdown.error:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px #e7bebe !important;
-  box-shadow: 0px 0px 0px 1px #e7bebe !important;
+  -webkit-box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
+  box-shadow: 0px 0px 0px 1px var(--sui-red-15) !important;
 }
 .ui.selection.dropdown.error:hover .menu {
-  -webkit-box-shadow: 0px 1px 0px 1px #E7BEBE;
-  box-shadow: 0px 1px 0px 1px #E7BEBE;
+  -webkit-box-shadow: 0px 1px 0px 1px var(--sui-red-15);
+  box-shadow: 0px 1px 0px 1px var(--sui-red-15);
 }
 .ui.selection.dropdown.error .menu .item:hover {
-  background-color: #FFF2F2;
+  background-color: var(--sui-red-23);
 }
 /* Selected */
 .ui.selection.dropdown.error .menu .item.selected {
-  background-color: #FFF2F2;
+  background-color: var(--sui-red-23);
 }
 /* Visible */
 .ui.visible.selection.dropdown {
@@ -427,10 +427,10 @@
   visibility: visible;
   width: 0.5em;
   height: 0.5em;
-  -webkit-box-shadow: -1px -1px 0px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: -1px -1px 0px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: -1px -1px 0px 1px hsl(var(--sui-lightness-lowest), 0.05);
+  box-shadow: -1px -1px 0px 1px hsl(var(--sui-lightness-lowest), 0.05);
   background-image: none;
-  background-color: #FFFFFF;
+  background-color: var(--sui-white-15);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -438,9 +438,9 @@
   z-index: 12;
 }
 .ui.pointing.dropdown .menu .active.item:first-child {
-  background: transparent -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.03)));
-  background: transparent -moz- oldlinear-gradient(transparent, rgba(0, 0, 0, 0.03));
-  background: transparent linear-gradient(transparent, rgba(0, 0, 0, 0.03));
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(var(--sui-lightness-lowest), 0.03)));
+  background: transparent -moz- oldlinear-gradient(transparent, hsl(var(--sui-lightness-lowest), 0.03));
+  background: transparent linear-gradient(transparent, hsl(var(--sui-lightness-lowest), 0.03));
 }
 /* Directions */
 .ui.pointing.dropdown .menu:after {
