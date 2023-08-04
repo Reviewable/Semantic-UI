@@ -17,7 +17,10 @@ type : 'UI View'
     <div class="ui grid">
       <div class="row">
         {% for shade in color.shades %}
-        <div class="column">
+        <div class="column" style="padding: 0; width: 30px;">
+          <div color-sample
+            style="height: 30px; width: 30px; background-color: var({{shade.split(':')[0] }});">
+          </div>
           <div style="height: 30px; width: 30px; background-color: var({{shade.split(':')[0] }});">
           </div>
           <p class="ui small pointing label" style="margin-bottom: 4px;">
@@ -29,3 +32,17 @@ type : 'UI View'
     {% endfor %}
   </div>
 </div>
+
+<style>
+  .column:nth-of-type(1) [color-sample]::after {
+    content: 'hifi';
+    left: -1.5em;
+    position: absolute;
+  }
+
+  .column:nth-of-type(1) [color-sample]~div::after {
+    content: 'lofi';
+    left: -1.5em;
+    position: absolute;
+  }
+</style>

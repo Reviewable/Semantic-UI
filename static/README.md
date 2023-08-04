@@ -33,6 +33,6 @@ The `docs` sample site uses sessions storage and stylesheet toggles to support a
 
 ## Consumption in Reviewable
 
-Currently, we don't pull from NPM or anything, just pull in the files from Github at `build/packaged/*`. In the very near future all javascript originally a part of SemanticUI will be stripped out of Reviewable, and at that point, out of this repo as well. As such, no javascript is demonstrated in the sample docs which should be used for developing the CSS only. Note that the CSS is left in place for the original javascript components (modules), in case we want to build Reviewable specific widgets at any point.
+Currently, we don't pull from NPM or anything, just pull in the files from Github at `build/packaged/*`. In the very near future all javascript that was originally a part of SemanticUI will be stripped out of Reviewable, and at that point, out of this repo as well. As such, no javascript is demonstrated in the sample docs and those should be used for developing the CSS only. Note that the CSS is left in place for the original javascript components (modules), in case we want to build Reviewable specific widgets at any point.
 
 </div>

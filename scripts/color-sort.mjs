@@ -35,7 +35,7 @@ const colorDecks = Object
       name,
       shades: shades
         .map(shade => {
-          if (shade.includes('rgba')) {
+          if (shade.includes('rgba') || shade.includes('hsla')) {
             return tinycolor(blendRgbaWithWhite(shade));
           } else {
             return tinycolor(shade);

@@ -1,4 +1,5 @@
-:root {
+:root,
+[color-sample] {
   --sui-text-light: var(--sui-white-15);
   --sui-lightness-highest: 0, 0%, 100%;
   --sui-lightness-lowest: 0, 0%, 0%;

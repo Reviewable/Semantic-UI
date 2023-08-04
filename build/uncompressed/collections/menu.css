@@ -985,8 +985,8 @@
 }
 .ui.menu .orange.active.item,
 .ui.orange.menu .active.item {
-  border-color: var(--sui-orange-3) !important;
-  color: var(--sui-orange-3) !important;
+  border-color: var(--sui-orange-2) !important;
+  color: var(--sui-orange-2) !important;
 }
 .ui.menu .teal.active.item,
 .ui.teal.menu .active.item {
@@ -1142,10 +1142,10 @@
   background-color: var(--sui-purple-4);
 }
 .ui.inverted.orange.menu {
-  background-color: var(--sui-orange-3);
+  background-color: var(--sui-orange-2);
 }
 .ui.inverted.orange.pointing.menu .active.item:after {
-  background-color: var(--sui-orange-5);
+  background-color: var(--sui-orange-4);
 }
 .ui.inverted.teal.menu {
   background-color: var(--sui-teal-3);

@@ -2388,8 +2388,8 @@ body > .ui.grid {
 }
 .ui.menu .orange.active.item,
 .ui.orange.menu .active.item {
-  border-color: var(--sui-orange-3) !important;
-  color: var(--sui-orange-3) !important;
+  border-color: var(--sui-orange-2) !important;
+  color: var(--sui-orange-2) !important;
 }
 .ui.menu .teal.active.item,
 .ui.teal.menu .active.item {
@@ -2545,10 +2545,10 @@ body > .ui.grid {
   background-color: var(--sui-purple-4);
 }
 .ui.inverted.orange.menu {
-  background-color: var(--sui-orange-3);
+  background-color: var(--sui-orange-2);
 }
 .ui.inverted.orange.pointing.menu .active.item:after {
-  background-color: var(--sui-orange-5);
+  background-color: var(--sui-orange-4);
 }
 .ui.inverted.teal.menu {
   background-color: var(--sui-teal-3);
@@ -4508,125 +4508,146 @@ body > .ui.grid {
 /*--- Black ---*/
 .ui.black.buttons .button,
 .ui.black.button {
-  background-color: var(--sui-black-7);
+  --button-bg-color: var(--sui-black-7);
+  --button-hover-color: var(--sui-black-5);
+  --button-active-color: var(--sui-black-3);
+  background-color: var(--button-bg-color);
   color: var(--sui-text-light);
 }
 .ui.black.buttons .button:hover,
 .ui.black.button:hover {
-  background-color: var(--sui-black-5);
+  background-color: var(--button-hover-color);
   color: var(--sui-text-light);
 }
 .ui.black.buttons .button:active,
 .ui.black.button:active {
-  background-color: var(--sui-black-3);
+  background-color: var(--button-active-color);
   color: var(--sui-text-light);
 }
 /*--- Green ---*/
 .ui.green.buttons .button,
 .ui.green.button {
-  background-color: var(--sui-green-5);
+  --button-bg-color: var(--sui-green-5);
+  --button-hover-color: var(--sui-green-6);
+  --button-active-color: var(--sui-green-3);
+  background-color: var(--button-bg-color);
   color: var(--sui-text-light);
 }
 .ui.green.buttons .button:hover,
 .ui.green.button:hover,
 .ui.green.buttons .active.button,
 .ui.green.button.active {
-  background-color: var(--sui-green-6);
+  background-color: var(--button-hover-color);
   color: var(--sui-text-light);
 }
 .ui.green.buttons .button:active,
 .ui.green.button:active {
-  background-color: var(--sui-green-3);
+  background-color: var(--button-active-color);
   color: var(--sui-text-light);
 }
 /*--- Red ---*/
 .ui.red.buttons .button,
 .ui.red.button {
-  background-color: var(--sui-red-8);
+  --button-bg-color: var(--sui-red-8);
+  --button-hover-color: var(--sui-red-10);
+  --button-active-color: var(--sui-red-4);
+  background-color: var(--button-bg-color);
   color: var(--sui-text-light);
 }
 .ui.red.buttons .button:hover,
 .ui.red.button:hover,
 .ui.red.buttons .active.button,
 .ui.red.button.active {
-  background-color: var(--sui-red-10);
+  background-color: var(--button-hover-color);
   color: var(--sui-text-light);
 }
 .ui.red.buttons .button:active,
 .ui.red.button:active {
-  background-color: var(--sui-red-4);
+  background-color: var(--button-active-color);
   color: var(--sui-text-light);
 }
 /*--- Orange ---*/
 .ui.orange.buttons .button,
 .ui.orange.button {
-  background-color: var(--sui-orange-2);
+  --button-bg-color: var(--sui-orange-2);
+  --button-hover-color: var(--sui-orange-3);
+  --button-active-color: var(--sui-orange-1);
+  background-color: var(--button-bg-color);
   color: var(--sui-text-light);
 }
 .ui.orange.buttons .button:hover,
 .ui.orange.button:hover,
 .ui.orange.buttons .active.button,
 .ui.orange.button.active {
-  background-color: var(--sui-orange-4);
+  background-color: var(--button-hover-color);
   color: var(--sui-text-light);
 }
 .ui.orange.buttons .button:active,
 .ui.orange.button:active {
-  background-color: var(--sui-orange-1);
+  background-color: var(--button-active-color);
   color: var(--sui-text-light);
 }
 /*--- Blue ---*/
 .ui.blue.buttons .button,
 .ui.blue.button {
-  background-color: var(--sui-blue-4);
+  --button-bg-color: var(--sui-blue-4);
+  --button-hover-color: var(--sui-blue-3);
+  --button-active-color: var(--sui-blue-2);
+  background-color: var(--button-bg-color);
   color: var(--sui-text-light);
 }
 .ui.blue.buttons .button:hover,
 .ui.blue.button:hover,
 .ui.blue.buttons .active.button,
 .ui.blue.button.active {
-  background-color: var(--sui-blue-3);
+  background-color: var(--button-hover-color);
   color: var(--sui-text-light);
 }
 .ui.blue.buttons .button:active,
 .ui.blue.button:active {
-  background-color: var(--sui-blue-2);
+  background-color: var(--button-active-color);
   color: var(--sui-text-light);
 }
 /*--- Purple ---*/
 .ui.purple.buttons .button,
 .ui.purple.button {
-  background-color: var(--sui-purple-3);
+  --button-bg-color: var(--sui-purple-3);
+  --button-hover-color: var(--sui-purple-2);
+  --button-active-color: var(--sui-purple-1);
+  background-color: var(--button-bg-color);
   color: var(--sui-text-light);
 }
 .ui.purple.buttons .button:hover,
 .ui.purple.button:hover,
 .ui.purple.buttons .active.button,
 .ui.purple.button.active {
-  background-color: var(--sui-purple-2);
+  background-color: var(--button-hover-color);
   color: var(--sui-text-light);
 }
 .ui.purple.buttons .button:active,
 .ui.purple.button:active {
-  background-color: var(--sui-purple-1);
+  background-color: var(--button-active-color);
   color: var(--sui-text-light);
 }
 /*--- Teal ---*/
 .ui.teal.buttons .button,
 .ui.teal.button {
-  background-color: var(--sui-teal-3);
+  --button-bg-color: var(--sui-teal-3);
+  --button-hover-color: var(--sui-teal-2);
+  --button-active-color: var(--sui-teal-1);
+  background-color: var(--button-bg-color);
   color: var(--sui-text-light);
 }
 .ui.teal.buttons .button:hover,
 .ui.teal.button:hover,
 .ui.teal.buttons .active.button,
 .ui.teal.button.active {
-  background-color: var(--sui-teal-2);
+  background-color: var(--button-hover-color);
   color: var(--sui-text-light);
 }
 .ui.teal.buttons .button:active,
 .ui.teal.button:active {
-  background-color: var(--sui-teal-1);
+  background-color: var(--button-active-color);
   color: var(--sui-text-light);
 }
 /*---------------
@@ -4634,19 +4655,22 @@ body > .ui.grid {
 ----------------*/
 .ui.positive.buttons .button,
 .ui.positive.button {
-  background-color: var(--sui-green-5) !important;
+  --button-bg-color: var(--sui-green-5);
+  --button-hover-color: var(--sui-green-6);
+  --button-active-color: var(--sui-green-3);
+  background-color: var(--button-bg-color) !important;
   color: var(--sui-text-light);
 }
 .ui.positive.buttons .button:hover,
 .ui.positive.button:hover,
 .ui.positive.buttons .active.button,
 .ui.positive.button.active {
-  background-color: var(--sui-green-6) !important;
+  background-color: var(--button-hover-color) !important;
   color: var(--sui-text-light);
 }
 .ui.positive.buttons .button:active,
 .ui.positive.button:active {
-  background-color: var(--sui-green-3) !important;
+  background-color: var(--button-active-color) !important;
   color: var(--sui-text-light);
 }
 /*---------------
@@ -4654,19 +4678,22 @@ body > .ui.grid {
 ----------------*/
 .ui.negative.buttons .button,
 .ui.negative.button {
-  background-color: var(--sui-red-8) !important;
+  --button-bg-color: var(--sui-red-8);
+  --button-hover-color: var(--sui-red-10);
+  --button-active-color: var(--sui-red-4);
+  background-color: var(--button-bg-color) !important;
   color: var(--sui-text-light);
 }
 .ui.negative.buttons .button:hover,
 .ui.negative.button:hover,
 .ui.negative.buttons .active.button,
 .ui.negative.button.active {
-  background-color: var(--sui-red-10) !important;
+  background-color: var(--button-hover-color) !important;
   color: var(--sui-text-light);
 }
 .ui.negative.buttons .button:active,
 .ui.negative.button:active {
-  background-color: var(--sui-red-4) !important;
+  background-color: var(--button-active-color) !important;
   color: var(--sui-text-light);
 }
 /*******************************
@@ -5386,7 +5413,7 @@ i.purple.icon {
   color: var(--sui-purple-3) !important;
 }
 i.orange.icon {
-  color: var(--sui-orange-3) !important;
+  color: var(--sui-orange-2) !important;
 }
 i.teal.icon {
   color: var(--sui-teal-3) !important;
@@ -5415,7 +5442,7 @@ i.inverted.purple.icon {
   color: var(--sui-text-light) !important;
 }
 i.inverted.orange.icon {
-  background-color: var(--sui-orange-3) !important;
+  background-color: var(--sui-orange-2) !important;
   color: var(--sui-text-light) !important;
 }
 i.inverted.teal.icon {
@@ -6312,18 +6339,18 @@ a.ui.green.label:hover:before {
 /* Hover */
 a.ui.red.labels .label:hover,
 a.ui.red.label:hover {
-  background-color: var(--sui-red-3) !important;
-  border-color: var(--sui-red-3) !important;
+  background-color: var(--sui-red-1) !important;
+  border-color: var(--sui-red-1) !important;
   color: var(--sui-text-light) !important;
 }
 .ui.labels a.red.label:hover:before,
 .ui.red.labels a.label:hover:before,
 a.ui.red.label:hover:before {
-  background-color: var(--sui-red-3) !important;
+  background-color: var(--sui-red-1) !important;
 }
 /* Ribbon */
 .ui.red.ribbon.label {
-  border-color: var(--sui-red-3) !important;
+  border-color: var(--sui-red-1) !important;
 }
 /*--- Blue ---*/
 .ui.blue.labels .label,
@@ -6396,27 +6423,27 @@ a.ui.purple.label:hover:before {
 /*--- Orange ---*/
 .ui.orange.labels .label,
 .ui.orange.label {
-  background-color: var(--sui-orange-3) !important;
-  border-color: var(--sui-orange-3) !important;
+  background-color: var(--sui-orange-4) !important;
+  border-color: var(--sui-orange-4) !important;
   color: var(--sui-text-light) !important;
 }
 .ui.labels .orange.label:before,
 .ui.orange.labels .label:before,
 .ui.orange.label:before {
-  background-color: var(--sui-orange-3) !important;
+  background-color: var(--sui-orange-4) !important;
 }
 /* Hover */
 a.ui.orange.labels .label:hover,
 .ui.orange.labels a.label:hover,
 a.ui.orange.label:hover {
-  background-color: var(--sui-red-5) !important;
-  border-color: var(--sui-red-5) !important;
+  background-color: var(--sui-orange-1) !important;
+  border-color: var(--sui-orange-1) !important;
   color: var(--sui-text-light) !important;
 }
 .ui.labels a.orange.label:hover:before,
 .ui.orange.labels a.label:hover:before,
 a.ui.orange.label:hover:before {
-  background-color: var(--sui-red-5) !important;
+  background-color: var(--sui-orange-1) !important;
 }
 /* Corner */
 .ui.orange.corner.label,
@@ -6425,7 +6452,41 @@ a.ui.orange.label:hover:before {
 }
 /* Ribbon */
 .ui.orange.ribbon.label {
-  border-color: var(--sui-red-5) !important;
+  border-color: var(--sui-orange-1) !important;
+}
+/*--- yellow ---*/
+.ui.yellow.labels .label,
+.ui.yellow.label {
+  background-color: var(--sui-yellow-5) !important;
+  border-color: var(--sui-yellow-5) !important;
+  color: var(--sui-text-light) !important;
+}
+.ui.labels .yellow.label:before,
+.ui.yellow.labels .label:before,
+.ui.yellow.label:before {
+  background-color: var(--sui-yellow-5) !important;
+}
+/* Hover */
+a.ui.yellow.labels .label:hover,
+.ui.yellow.labels a.label:hover,
+a.ui.yellow.label:hover {
+  background-color: var(--sui-yellow-3) !important;
+  border-color: var(--sui-yellow-3) !important;
+  color: var(--sui-text-light) !important;
+}
+.ui.labels a.yellow.label:hover:before,
+.ui.yellow.labels a.label:hover:before,
+a.ui.yellow.label:hover:before {
+  background-color: var(--sui-yellow-3) !important;
+}
+/* Corner */
+.ui.yellow.corner.label,
+.ui.yellow.corner.label:hover {
+  background-color: transparent !important;
+}
+/* Ribbon */
+.ui.yellow.ribbon.label {
+  border-color: var(--sui-yellow-3) !important;
 }
 /*--- Teal ---*/
 .ui.teal.labels .label,
@@ -7502,7 +7563,7 @@ a.ui.teal.label:hover:before {
   border-top: 0.2em solid var(--sui-red-8);
 }
 .ui.orange.segment {
-  border-top: 0.2em solid var(--sui-orange-3);
+  border-top: 0.2em solid var(--sui-orange-2);
 }
 .ui.purple.segment {
   border-top: 0.2em solid var(--sui-purple-3);
@@ -7530,7 +7591,7 @@ a.ui.teal.label:hover:before {
   color: var(--sui-text-light) !important;
 }
 .ui.inverted.orange.segment {
-  background-color: var(--sui-orange-3) !important;
+  background-color: var(--sui-orange-2) !important;
   color: var(--sui-text-light) !important;
 }
 .ui.inverted.purple.segment {
@@ -11939,7 +12000,8 @@ body.pushed.scrolling.ui.dimmable {
   display: block;
 }
 
-:root {
+:root,
+[color-sample] {
   --sui-text-light: var(--sui-white-15);
   --sui-lightness-highest: 0, 0%, 100%;
   --sui-lightness-lowest: 0, 0%, 0%;

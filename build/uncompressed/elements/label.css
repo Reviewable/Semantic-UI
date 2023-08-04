@@ -463,18 +463,18 @@ a.ui.green.label:hover:before {
 /* Hover */
 a.ui.red.labels .label:hover,
 a.ui.red.label:hover {
-  background-color: var(--sui-red-3) !important;
-  border-color: var(--sui-red-3) !important;
+  background-color: var(--sui-red-1) !important;
+  border-color: var(--sui-red-1) !important;
   color: var(--sui-text-light) !important;
 }
 .ui.labels a.red.label:hover:before,
 .ui.red.labels a.label:hover:before,
 a.ui.red.label:hover:before {
-  background-color: var(--sui-red-3) !important;
+  background-color: var(--sui-red-1) !important;
 }
 /* Ribbon */
 .ui.red.ribbon.label {
-  border-color: var(--sui-red-3) !important;
+  border-color: var(--sui-red-1) !important;
 }
 /*--- Blue ---*/
 .ui.blue.labels .label,
@@ -547,27 +547,27 @@ a.ui.purple.label:hover:before {
 /*--- Orange ---*/
 .ui.orange.labels .label,
 .ui.orange.label {
-  background-color: var(--sui-orange-3) !important;
-  border-color: var(--sui-orange-3) !important;
+  background-color: var(--sui-orange-4) !important;
+  border-color: var(--sui-orange-4) !important;
   color: var(--sui-text-light) !important;
 }
 .ui.labels .orange.label:before,
 .ui.orange.labels .label:before,
 .ui.orange.label:before {
-  background-color: var(--sui-orange-3) !important;
+  background-color: var(--sui-orange-4) !important;
 }
 /* Hover */
 a.ui.orange.labels .label:hover,
 .ui.orange.labels a.label:hover,
 a.ui.orange.label:hover {
-  background-color: var(--sui-red-5) !important;
-  border-color: var(--sui-red-5) !important;
+  background-color: var(--sui-orange-1) !important;
+  border-color: var(--sui-orange-1) !important;
   color: var(--sui-text-light) !important;
 }
 .ui.labels a.orange.label:hover:before,
 .ui.orange.labels a.label:hover:before,
 a.ui.orange.label:hover:before {
-  background-color: var(--sui-red-5) !important;
+  background-color: var(--sui-orange-1) !important;
 }
 /* Corner */
 .ui.orange.corner.label,
@@ -576,7 +576,41 @@ a.ui.orange.label:hover:before {
 }
 /* Ribbon */
 .ui.orange.ribbon.label {
-  border-color: var(--sui-red-5) !important;
+  border-color: var(--sui-orange-1) !important;
+}
+/*--- yellow ---*/
+.ui.yellow.labels .label,
+.ui.yellow.label {
+  background-color: var(--sui-yellow-5) !important;
+  border-color: var(--sui-yellow-5) !important;
+  color: var(--sui-text-light) !important;
+}
+.ui.labels .yellow.label:before,
+.ui.yellow.labels .label:before,
+.ui.yellow.label:before {
+  background-color: var(--sui-yellow-5) !important;
+}
+/* Hover */
+a.ui.yellow.labels .label:hover,
+.ui.yellow.labels a.label:hover,
+a.ui.yellow.label:hover {
+  background-color: var(--sui-yellow-3) !important;
+  border-color: var(--sui-yellow-3) !important;
+  color: var(--sui-text-light) !important;
+}
+.ui.labels a.yellow.label:hover:before,
+.ui.yellow.labels a.label:hover:before,
+a.ui.yellow.label:hover:before {
+  background-color: var(--sui-yellow-3) !important;
+}
+/* Corner */
+.ui.yellow.corner.label,
+.ui.yellow.corner.label:hover {
+  background-color: transparent !important;
+}
+/* Ribbon */
+.ui.yellow.ribbon.label {
+  border-color: var(--sui-yellow-3) !important;
 }
 /*--- Teal ---*/
 .ui.teal.labels .label,

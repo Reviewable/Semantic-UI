@@ -3,38 +3,49 @@
   --sui-lofi-white-d-1: #F8F8F8;
   --sui-lofi-white-l-1: #FFFFFF;
   --sui-lofi-black-d-1: #000000;
-  --sui-lofi-black-l-1: #222222;
+  --sui-lofi-black-l-1: #333333;
   --sui-lofi-grey-d-1: #555555;
   --sui-lofi-grey-d-2: #808080;
   --sui-lofi-grey-d-3: #AAAAAA;
-  --sui-lofi-grey-l-1: #DDDDDD;
-  --sui-lofi-grey-l-2: #E8E8E8;
-  --sui-lofi-green-d-1: #119000;
+  --sui-lofi-grey-l-1: #CBCBCB;
+  --sui-lofi-grey-l-2: #DDDDDD;
+  --sui-lofi-grey-l-3: #E8E8E8;
+  --sui-lofi-green-d-1: #52A954;
   --sui-lofi-green-d-2: #5BBD72;
+  --sui-lofi-green-d-3: #58CB73;
   --sui-lofi-green-l-1: #A1CF64;
   --sui-lofi-green-l-2: #DEFCD5;
-  --sui-lofi-red-d-1: #CD2929;
-  --sui-lofi-red-d-2: #FF4121;
-  --sui-lofi-red-d-3: #D95C5C;
-  --sui-lofi-red-l-1: #F1D7D7;
-  --sui-lofi-orange-d-1: #F05940;
-  --sui-lofi-orange-l-1: #DA683B;
-  --sui-lofi-yellow-d-1: #7D6C00;
-  --sui-lofi-yellow-d-2: #96904D;
-  --sui-lofi-yellow-l-1: #FFCB08;
-  --sui-lofi-yellow-l-2: #F6EFC3;
-  --sui-lofi-blue-d-1: #0AA5DF;
+  --sui-lofi-green-l-3: #F2F8F0;
+  --sui-lofi-red-d-1: #A95252;
+  --sui-lofi-red-d-2: #D24B4C;
+  --sui-lofi-red-d-3: #FF4121;
+  --sui-lofi-red-d-4: #D95C5C;
+  --sui-lofi-red-l-1: #E75859;
+  --sui-lofi-red-l-2: #ffb9b9;
+  --sui-lofi-red-l-3: #F1D7D7;
+  --sui-lofi-red-l-4: #F9F4F4;
+  --sui-lofi-orange-d-1: #E96633;
+  --sui-lofi-orange-l-1: #FF7038;
+  --sui-lofi-yellow-d-1: #96904D;
+  --sui-lofi-yellow-d-2: #FFCB08;
+  --sui-lofi-yellow-l-1: #F6F3D5;
+  --sui-lofi-yellow-l-2: #FBF6E9;
+  --sui-lofi-blue-d-1: #4D8796;
+  --sui-lofi-blue-d-2: #0AA5DF;
+  --sui-lofi-blue-d-3: #1AB8F3;
   --sui-lofi-blue-l-1: #6ECFF5;
   --sui-lofi-blue-l-2: #E6F4F9;
   --sui-lofi-purple-d-1: #3E3773;
-  --sui-lofi-purple-l-1: #564F8A;
+  --sui-lofi-purple-d-2: #564F8A;
+  --sui-lofi-purple-l-1: #7771A0;
   --sui-lofi-teal-d-1: #00847E;
+  --sui-lofi-teal-d-2: #009A93;
   --sui-lofi-teal-l-1: #00B5AD;
   /* hifi overrides: */
-  --sui-white-1: var(--sui-lofi-grey-l-2);
-  --sui-white-2: var(--sui-lofi-grey-l-2);
-  --sui-white-3: var(--sui-lofi-grey-l-2);
-  --sui-white-4: var(--sui-lofi-grey-l-2);
+  --sui-white-1: var(--sui-lofi-grey-l-3);
+  --sui-white-2: var(--sui-lofi-grey-l-3);
+  --sui-white-3: var(--sui-lofi-grey-l-3);
+  --sui-white-4: var(--sui-lofi-grey-l-3);
   --sui-white-5: var(--sui-lofi-white-d-1);
   --sui-white-6: var(--sui-lofi-white-d-1);
   --sui-white-7: var(--sui-lofi-white-d-1);
@@ -42,7 +53,7 @@
   --sui-white-9: var(--sui-lofi-white-d-1);
   --sui-white-10: var(--sui-lofi-white-d-1);
   --sui-white-11: var(--sui-lofi-white-d-1);
-  --sui-white-12: var(--sui-lofi-white-d-1);
+  --sui-white-12: var(--sui-lofi-white-l-1);
   --sui-white-13: var(--sui-lofi-white-l-1);
   --sui-white-14: var(--sui-lofi-white-l-1);
   --sui-white-15: var(--sui-lofi-white-l-1);
@@ -59,89 +70,134 @@
   --sui-grey-11: var(--sui-lofi-grey-d-3);
   --sui-grey-12: var(--sui-lofi-grey-d-3);
   --sui-grey-13: var(--sui-lofi-grey-d-3);
-  --sui-grey-14: var(--sui-lofi-grey-d-3);
-  --sui-grey-15: var(--sui-lofi-grey-d-3);
-  --sui-grey-16: var(--sui-lofi-grey-d-3);
-  --sui-grey-17: var(--sui-lofi-grey-l-1);
-  --sui-grey-18: var(--sui-lofi-grey-l-1);
-  --sui-grey-19: var(--sui-lofi-grey-l-1);
-  --sui-grey-20: var(--sui-lofi-grey-l-1);
-  --sui-grey-21: var(--sui-lofi-grey-l-1);
-  --sui-grey-22: var(--sui-lofi-grey-l-1);
-  --sui-grey-23: var(--sui-lofi-grey-l-2);
-  --sui-grey-24: var(--sui-lofi-grey-l-2);
+  --sui-grey-14: var(--sui-lofi-grey-l-1);
+  --sui-grey-15: var(--sui-lofi-grey-l-1);
+  --sui-grey-16: var(--sui-lofi-grey-l-1);
+  --sui-grey-17: var(--sui-lofi-grey-l-2);
+  --sui-grey-18: var(--sui-lofi-grey-l-2);
+  --sui-grey-19: var(--sui-lofi-grey-l-2);
+  --sui-grey-20: var(--sui-lofi-grey-l-2);
+  --sui-grey-21: var(--sui-lofi-grey-l-2);
+  --sui-grey-22: var(--sui-lofi-grey-l-2);
+  --sui-grey-23: var(--sui-lofi-grey-l-3);
+  --sui-grey-24: var(--sui-lofi-grey-l-3);
   --sui-black-1: var(--sui-lofi-black-d-1);
   --sui-black-2: var(--sui-lofi-black-l-1);
   --sui-black-3: var(--sui-lofi-black-l-1);
   --sui-black-4: var(--sui-lofi-black-l-1);
-  --sui-black-5: var(--sui-lofi-grey-d-1);
+  --sui-black-5: var(--sui-lofi-black-l-1);
   --sui-black-6: var(--sui-lofi-grey-d-1);
   --sui-black-7: var(--sui-lofi-grey-d-1);
   --sui-black-8: var(--sui-lofi-grey-d-1);
   --sui-black-9: var(--sui-lofi-grey-d-1);
   --sui-green-1: var(--sui-lofi-green-d-1);
-  --sui-green-2: var(--sui-lofi-green-d-2);
+  --sui-green-2: var(--sui-lofi-green-d-1);
   --sui-green-3: var(--sui-lofi-green-d-2);
   --sui-green-4: var(--sui-lofi-green-d-2);
   --sui-green-5: var(--sui-lofi-green-d-2);
-  --sui-green-6: var(--sui-lofi-green-d-2);
+  --sui-green-6: var(--sui-lofi-green-d-3);
   --sui-green-7: var(--sui-lofi-green-l-1);
-  --sui-green-8: var(--sui-lofi-green-l-1);
+  --sui-green-8: var(--sui-lofi-green-d-3);
   --sui-green-9: var(--sui-lofi-green-l-1);
   --sui-green-10: var(--sui-lofi-green-l-2);
   --sui-green-11: var(--sui-lofi-green-l-2);
-  --sui-green-12: var(--sui-lofi-green-l-2);
+  --sui-green-12: var(--sui-lofi-green-l-3);
   --sui-red-1: var(--sui-lofi-red-d-1);
   --sui-red-2: var(--sui-lofi-red-d-1);
   --sui-red-3: var(--sui-lofi-red-d-2);
   --sui-red-4: var(--sui-lofi-red-d-2);
-  --sui-red-5: var(--sui-lofi-red-d-2);
-  --sui-red-6: var(--sui-lofi-red-d-2);
-  --sui-red-7: var(--sui-lofi-red-d-2);
-  --sui-red-8: var(--sui-lofi-red-d-3);
-  --sui-red-9: var(--sui-lofi-red-d-3);
-  --sui-red-10: var(--sui-lofi-red-d-3);
-  --sui-red-11: var(--sui-lofi-red-d-2);
-  --sui-red-12: var(--sui-lofi-red-d-3);
-  --sui-red-13: var(--sui-lofi-red-d-2);
-  --sui-red-14: var(--sui-lofi-red-d-2);
-  --sui-red-15: var(--sui-lofi-red-d-2);
-  --sui-red-16: var(--sui-lofi-red-d-2);
-  --sui-red-17: var(--sui-lofi-red-l-1);
-  --sui-red-18: var(--sui-lofi-red-l-1);
-  --sui-red-19: var(--sui-lofi-red-l-1);
-  --sui-red-20: var(--sui-lofi-red-l-1);
-  --sui-red-21: var(--sui-lofi-red-l-1);
-  --sui-red-22: var(--sui-lofi-red-l-1);
-  --sui-red-23: var(--sui-lofi-white-d-1);
+  --sui-red-5: var(--sui-lofi-red-d-3);
+  --sui-red-6: var(--sui-lofi-red-d-3);
+  --sui-red-7: var(--sui-lofi-red-d-3);
+  --sui-red-8: var(--sui-lofi-red-d-4);
+  --sui-red-9: var(--sui-lofi-red-d-4);
+  --sui-red-10: var(--sui-lofi-red-l-1);
+  --sui-red-11: var(--sui-lofi-red-l-1);
+  --sui-red-12: var(--sui-lofi-red-l-1);
+  --sui-red-13: var(--sui-lofi-red-d-4);
+  --sui-red-14: var(--sui-lofi-red-l-2);
+  --sui-red-15: var(--sui-lofi-red-l-2);
+  --sui-red-16: var(--sui-lofi-red-l-2);
+  --sui-red-17: var(--sui-lofi-red-l-3);
+  --sui-red-18: var(--sui-lofi-red-l-3);
+  --sui-red-19: var(--sui-lofi-red-l-3);
+  --sui-red-20: var(--sui-lofi-red-l-3);
+  --sui-red-21: var(--sui-lofi-red-l-3);
+  --sui-red-22: var(--sui-lofi-red-l-4);
+  --sui-red-23: var(--sui-lofi-red-l-4);
   --sui-red-24: var(--sui-lofi-white-l-1);
   --sui-orange-1: var(--sui-lofi-orange-d-1);
   --sui-orange-2: var(--sui-lofi-orange-d-1);
-  --sui-orange-3: var(--sui-lofi-orange-d-1);
+  --sui-orange-3: var(--sui-lofi-orange-l-1);
   --sui-orange-4: var(--sui-lofi-orange-l-1);
-  --sui-orange-5: var(--sui-lofi-orange-l-1);
   --sui-yellow-1: var(--sui-lofi-yellow-d-1);
-  --sui-yellow-2: var(--sui-lofi-yellow-d-2);
-  --sui-yellow-3: var(--sui-lofi-yellow-d-2);
-  --sui-yellow-4: var(--sui-lofi-yellow-l-1);
-  --sui-yellow-5: var(--sui-lofi-yellow-l-1);
-  --sui-yellow-6: var(--sui-lofi-yellow-l-2);
-  --sui-yellow-7: var(--sui-lofi-yellow-l-2);
-  --sui-yellow-8: var(--sui-lofi-yellow-l-2);
+  --sui-yellow-2: var(--sui-lofi-yellow-d-1);
+  --sui-yellow-3: var(--sui-lofi-yellow-d-1);
+  --sui-yellow-4: var(--sui-lofi-yellow-d-2);
+  --sui-yellow-5: var(--sui-lofi-yellow-d-2);
+  --sui-yellow-6: var(--sui-lofi-yellow-l-1);
+  --sui-yellow-7: var(--sui-lofi-yellow-l-1);
+  --sui-yellow-8: var(--sui-lofi-yellow-l-1);
   --sui-yellow-9: var(--sui-lofi-yellow-l-2);
-  --sui-blue-1: var(--sui-lofi-teal-d-1);
-  --sui-blue-2: var(--sui-lofi-blue-d-1);
-  --sui-blue-3: var(--sui-lofi-blue-d-1);
+  --sui-blue-1: var(--sui-lofi-blue-d-1);
+  --sui-blue-2: var(--sui-lofi-blue-d-3);
+  --sui-blue-3: var(--sui-lofi-blue-d-3);
   --sui-blue-4: var(--sui-lofi-blue-l-1);
   --sui-blue-5: var(--sui-lofi-blue-l-1);
   --sui-blue-6: var(--sui-lofi-blue-l-2);
   --sui-blue-7: var(--sui-lofi-white-l-1);
   --sui-purple-1: var(--sui-lofi-purple-d-1);
   --sui-purple-2: var(--sui-lofi-purple-d-1);
-  --sui-purple-3: var(--sui-lofi-purple-d-1);
+  --sui-purple-3: var(--sui-lofi-purple-d-2);
   --sui-purple-4: var(--sui-lofi-purple-l-1);
   --sui-teal-1: var(--sui-lofi-teal-d-1);
-  --sui-teal-2: var(--sui-lofi-teal-d-1);
+  --sui-teal-2: var(--sui-lofi-teal-d-2);
   --sui-teal-3: var(--sui-lofi-teal-l-1);
   --sui-teal-4: var(--sui-lofi-teal-l-1);
+}
+:root .ui.black.buttons .button,
+:root .ui.black.button {
+  --button-bg-color: var(--sui-lofi-grey-d-1);
+  --button-hover-color: var(--sui-lofi-black-l-1);
+  --button-active-color: var(--sui-lofi-black-d-1);
+}
+:root .ui.green.buttons .button,
+:root .ui.green.button,
+:root .ui.positive.buttons .button,
+:root .ui.positive.button {
+  --button-bg-color: var(--sui-lofi-green-d-2);
+  --button-hover-color: var(--sui-lofi-green-d-3);
+  --button-active-color: var(--sui-lofi-green-d-2);
+}
+:root .ui.red.buttons .button,
+:root .ui.red.button,
+:root .ui.negative.buttons .button,
+:root .ui.negative.button {
+  --button-bg-color: var(--sui-lofi-red-d-4);
+  --button-hover-color: var(--sui-lofi-red-l-1);
+  --button-active-color: var(--sui-lofi-red-d-2);
+}
+:root .ui.orange.buttons .button,
+:root .ui.orange.button {
+  --button-bg-color: var(--sui-lofi-orange-d-1);
+  --button-hover-color: var(--sui-lofi-orange-l-1);
+  --button-active-color: var(--sui-lofi-orange-d-1);
+}
+:root .ui.blue.buttons .button,
+:root .ui.blue.button {
+  --button-bg-color: var(--sui-lofi-blue-l-1);
+  --button-hover-color: var(--sui-lofi-blue-d-3);
+  --button-active-color: var(--sui-lofi-blue-d-2);
+}
+:root .ui.purple.buttons .button,
+:root .ui.purple.button {
+  --button-bg-color: var(--sui-lofi-purple-l-1);
+  --button-hover-color: var(--sui-lofi-purple-d-2);
+  --button-active-color: var(--sui-lofi-purple-d-1);
+}
+:root .ui.teal.buttons .button,
+:root .ui.teal.button {
+  --button-bg-color: var(--sui-lofi-teal-l-1);
+  --button-hover-color: var(--sui-lofi-teal-d-2);
+  --button-active-color: var(--sui-lofi-teal-d-1);
 }
