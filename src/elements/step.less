@@ -40,7 +40,7 @@
   width: 2.2em;
   height: 2.2em;
   transform: rotate(-45deg);
-  box-shadow: -1px -1px 0 0 hsl(var(--sui-lightness-lowest), 0.15) inset;
+  box-shadow: -1px -1px 0 0 hsl(var(--sui-fg-base-hsl), 0.15) inset;
 }
 
 .ui.step,
@@ -149,9 +149,9 @@
   font-size: 0em;
   overflow: hidden;
 
-  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
 
   line-height: 1;
 
@@ -198,7 +198,7 @@
 .ui.step:hover,
 .ui.step.hover {
   background-color: var(--sui-white-9);
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 .ui.steps .step.hover:after,
 .ui.steps .step:hover:after,
@@ -227,7 +227,7 @@
   cursor: auto;
   background-color: var(--sui-grey-2);
 
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
   font-weight: bold;
 }
 .ui.steps .step.active:after,

@@ -36,9 +36,9 @@
     border-radius 0.1s ease,
     width 0.2s ease;
 
-  -webkit-tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
-  -moz-tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
-  tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
+  -webkit-tap-highlight-color: hsl(var(--sui-fg-base-hsl), 0);
+  -moz-tap-highlight-color: hsl(var(--sui-fg-base-hsl), 0);
+  tap-highlight-color: hsl(var(--sui-fg-base-hsl), 0);
 }
 
 
@@ -64,9 +64,9 @@
   font-size: 0.875em;
   text-shadow: none;
 
-  -webkit-box-shadow: 0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  -moz-box-shadow: 0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  box-shadow: 0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  -webkit-box-shadow: 0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  -moz-box-shadow: 0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  box-shadow: 0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.1);
 
   -moz-border-radius: 0px 0px 0.325em 0.325em;
   -webkit-border-radius: 0px 0px 0.325em 0.325em;
@@ -140,12 +140,12 @@
 .ui.dropdown .menu .item {
   cursor: pointer;
   border: none;
-  border-top: 1px solid hsl(var(--sui-lightness-lowest), 0.05);
+  border-top: 1px solid hsl(var(--sui-fg-base-hsl), 0.05);
   height: auto;
 
   font-size: 0.875em;
   display: block;
-  color: hsl(var(--sui-lightness-lowest), 0.75);
+  color: hsl(var(--sui-fg-base-hsl), 0.75);
 
   padding: 0.85em 1em !important;
   font-size: 0.875rem;
@@ -202,7 +202,7 @@
 
 /* Menu Item Hover */
 .ui.dropdown .menu .item:hover {
-  background-color: hsl(var(--sui-lightness-lowest), 0.02);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.02);
   z-index: 12;
 }
 
@@ -212,7 +212,7 @@
 
 /* Menu Item Selected */
 .ui.dropdown .menu .item.selected {
-  background-color: hsl(var(--sui-lightness-lowest), 0.02);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.02);
   z-index: 12;
 }
 
@@ -223,7 +223,7 @@
 /* Menu Item Active */
 .ui.dropdown .menu .active.item {
   box-shadow: none;
-  background-color: hsl(var(--sui-lightness-lowest), 0.06) !important;
+  background-color: hsl(var(--sui-fg-base-hsl), 0.06) !important;
   border-left: none;
   border-color: transparent !important;
 
@@ -239,11 +239,11 @@
 
 .ui.dropdown > .default.text,
 .ui.default.dropdown > .text {
-  color: hsl(var(--sui-lightness-lowest), 0.5);
+  color: hsl(var(--sui-fg-base-hsl), 0.5);
 }
 .ui.dropdown:hover > .default.text,
 .ui.default.dropdown:hover > .text {
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 
 
@@ -364,11 +364,11 @@
   padding: 0.65em 1em;
 
   line-height: 1.33;
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) !important;
-  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) !important;
-  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) !important;
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) !important;
+  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) !important;
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) !important;
 
   -webkit-border-radius: 0.3125em !important;
   -moz-border-radius: 0.3125em !important;
@@ -454,9 +454,9 @@
 
 /* Hover */
 .ui.selection.dropdown:hover {
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.2) !important;
-  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.2) !important;
-  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.2) !important;
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.2) !important;
+  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.2) !important;
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.2) !important;
 }
 .ui.selection.dropdown:hover .menu {
   -webkit-box-shadow: 0px 1px 0px 1px var(--sui-grey-17);
@@ -573,9 +573,9 @@
   width: 0.5em;
   height: 0.5em;
 
-  -moz-box-shadow: -1px -1px 0px 1px hsl(var(--sui-lightness-lowest), 0.05);
-  -webkit-box-shadow: -1px -1px 0px 1px hsl(var(--sui-lightness-lowest), 0.05);
-  box-shadow: -1px -1px 0px 1px hsl(var(--sui-lightness-lowest), 0.05);
+  -moz-box-shadow: -1px -1px 0px 1px hsl(var(--sui-fg-base-hsl), 0.05);
+  -webkit-box-shadow: -1px -1px 0px 1px hsl(var(--sui-fg-base-hsl), 0.05);
+  box-shadow: -1px -1px 0px 1px hsl(var(--sui-fg-base-hsl), 0.05);
 
   background-image: none;
   background-color: var(--sui-white-15);
@@ -587,11 +587,11 @@
 }
 
 .ui.pointing.dropdown .menu .active.item:first-child {
-  background: transparent -webkit-linear-gradient(transparent, hsl(var(--sui-lightness-lowest), 0.03));
-  background: transparent -moz-linear-gradient(transparent, hsl(var(--sui-lightness-lowest), 0.03));
-  background: transparent -o-linear-gradient(transparent, hsl(var(--sui-lightness-lowest), 0.03));
-  background: transparent -ms-linear-gradient(transparent, hsl(var(--sui-lightness-lowest), 0.03));
-  background: transparent linear-gradient(transparent, hsl(var(--sui-lightness-lowest), 0.03));
+  background: transparent -webkit-linear-gradient(transparent, hsl(var(--sui-fg-base-hsl), 0.03));
+  background: transparent -moz-linear-gradient(transparent, hsl(var(--sui-fg-base-hsl), 0.03));
+  background: transparent -o-linear-gradient(transparent, hsl(var(--sui-fg-base-hsl), 0.03));
+  background: transparent -ms-linear-gradient(transparent, hsl(var(--sui-fg-base-hsl), 0.03));
+  background: transparent linear-gradient(transparent, hsl(var(--sui-fg-base-hsl), 0.03));
 }
 
 /* Directions */

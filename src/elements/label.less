@@ -23,7 +23,7 @@
   border-color: var(--sui-grey-23);
 
   padding: 0.5em 0.8em;
-  color: hsl(var(--sui-lightness-lowest), 0.65);
+  color: hsl(var(--sui-fg-base-hsl), 0.65);
 
   text-transform: uppercase;
   font-weight: normal;
@@ -138,9 +138,9 @@ a.ui.label {
   vertical-align: baseline;
   text-transform: none;
 
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
-  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
-  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
+  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
 }
 .ui.image.label img {
   display: inline-block;
@@ -174,12 +174,12 @@ a.ui.labels .label:hover,
 a.ui.label:hover {
   background-color: var(--sui-white-1);
   border-color: var(--sui-white-1);
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
 }
 .ui.labels a.label:hover:before,
 a.ui.label:hover:before {
   background-color: var(--sui-white-1);
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
 }
 
 /*-------------------
@@ -263,9 +263,9 @@ a.ui.label:hover:before {
   width: 0.55em;
   height: 0.55em;
 
-  -webkit-box-shadow: 0 -1px 1px 0 hsl(var(--sui-lightness-lowest), 0.3);
-  -moz-box-shadow: 0 -1px 1px 0 hsl(var(--sui-lightness-lowest), 0.3);
-  box-shadow: 0 -1px 1px 0 hsl(var(--sui-lightness-lowest), 0.3);
+  -webkit-box-shadow: 0 -1px 1px 0 hsl(var(--sui-fg-base-hsl), 0.3);
+  -moz-box-shadow: 0 -1px 1px 0 hsl(var(--sui-fg-base-hsl), 0.3);
+  box-shadow: 0 -1px 1px 0 hsl(var(--sui-fg-base-hsl), 0.3);
 
   -moz-border-radius: 100px 100px 100px 100px;
   -webkit-border-radius: 100px 100px 100px 100px;
@@ -284,7 +284,7 @@ a.ui.label:hover:before {
   -moz-border-radius: 0px 4px 4px 0px;
   border-radius: 0px 4px 4px 0px;
 
-  border-color: hsl(var(--sui-lightness-lowest), 0.15);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.15);
 }
 
 .ui.ribbon.label:after {
@@ -516,7 +516,7 @@ a.ui.label:hover:before {
 
 .ui.inverted.labels .label,
 .ui.inverted.label {
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 
 /*-------------------
@@ -528,7 +528,7 @@ a.ui.label:hover:before {
 .ui.black.label {
   background-color: var(--sui-black-7) !important;
   border-color: var(--sui-black-7) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .black.label:before,
 .ui.black.labels .label:before,
@@ -563,7 +563,7 @@ a.ui.black.label:hover:before {
 .ui.green.label {
   background-color: var(--sui-green-7) !important;
   border-color: var(--sui-green-7) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .green.label:before,
 .ui.green.labels .label:before,
@@ -599,7 +599,7 @@ a.ui.green.label:hover:before {
 .ui.red.label {
   background-color: var(--sui-red-8) !important;
   border-color: var(--sui-red-8) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .red.label:before,
 .ui.red.labels .label:before,
@@ -617,7 +617,7 @@ a.ui.red.labels .label:hover,
 a.ui.red.label:hover {
   background-color: var(--sui-red-1) !important;
   border-color: var(--sui-red-1) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels a.red.label:hover:before,
 .ui.red.labels a.label:hover:before,
@@ -635,7 +635,7 @@ a.ui.red.label:hover:before {
 .ui.blue.label {
   background-color: var(--sui-blue-4) !important;
   border-color: var(--sui-blue-4) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .blue.label:before,
 .ui.blue.labels .label:before,
@@ -648,7 +648,7 @@ a.ui.blue.labels .label:hover,
 a.ui.blue.label:hover {
   background-color: var(--sui-blue-3) !important;
   border-color: var(--sui-blue-3) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels a.blue.label:hover:before,
 .ui.blue.labels a.label:hover:before,
@@ -670,7 +670,7 @@ a.ui.blue.label:hover:before {
 .ui.purple.label {
   background-color: var(--sui-purple-3) !important;
   border-color: var(--sui-purple-3) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .purple.label:before,
 .ui.purple.labels .label:before,
@@ -683,7 +683,7 @@ a.ui.purple.labels .label:hover,
 a.ui.purple.label:hover {
   background-color: var(--sui-purple-2) !important;
   border-color: var(--sui-purple-2) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels a.purple.label:hover:before,
 .ui.purple.labels a.label:hover:before,
@@ -705,7 +705,7 @@ a.ui.purple.label:hover:before {
 .ui.orange.label {
   background-color: var(--sui-orange-4) !important;
   border-color: var(--sui-orange-4) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .orange.label:before,
 .ui.orange.labels .label:before,
@@ -718,7 +718,7 @@ a.ui.orange.labels .label:hover,
 a.ui.orange.label:hover {
   background-color: var(--sui-orange-1) !important;
   border-color: var(--sui-orange-1) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels a.orange.label:hover:before,
 .ui.orange.labels a.label:hover:before,
@@ -740,7 +740,7 @@ a.ui.orange.label:hover:before {
 .ui.yellow.label {
   background-color: var(--sui-yellow-5) !important;
   border-color: var(--sui-yellow-5) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .yellow.label:before,
 .ui.yellow.labels .label:before,
@@ -753,7 +753,7 @@ a.ui.yellow.labels .label:hover,
 a.ui.yellow.label:hover {
   background-color: var(--sui-yellow-3) !important;
   border-color: var(--sui-yellow-3) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels a.yellow.label:hover:before,
 .ui.yellow.labels a.label:hover:before,
@@ -778,7 +778,7 @@ a.ui.yellow.label:hover:before {
 .ui.teal.label {
   background-color: var(--sui-teal-3) !important;
   border-color: var(--sui-teal-3) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels .teal.label:before,
 .ui.teal.labels .label:before,
@@ -791,7 +791,7 @@ a.ui.teal.labels .label:hover,
 a.ui.teal.label:hover {
   background-color: var(--sui-teal-2) !important;
   border-color: var(--sui-teal-2) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.labels a.teal.label:hover:before,
 .ui.teal.labels a.label:hover:before,

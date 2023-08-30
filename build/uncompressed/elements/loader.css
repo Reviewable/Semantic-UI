@@ -78,10 +78,10 @@
 --------------------*/
 .ui.dimmer .ui.text.loader,
 .ui.inverted.text.loader {
-  color: hsl(var(--sui-lightness-highest), 0.8);
+  color: hsl(var(--sui-bg-base-hsl), 0.8);
 }
 .ui.inverted.dimmer .ui.text.loader {
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 /* Tiny Size */
 .ui.dimmer .mini.ui.loader,

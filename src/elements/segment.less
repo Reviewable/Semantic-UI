@@ -18,7 +18,7 @@
   position: relative;
   background-color: var(--sui-white-15);
 
-  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
 
   margin: 1em 0em;
   padding: 1em;
@@ -61,11 +61,11 @@
   border-radius: 0px;
 
   -webkit-box-shadow:
-    0px 1px 0px hsl(var(--sui-lightness-lowest), 0.1);
+    0px 1px 0px hsl(var(--sui-fg-base-hsl), 0.1);
   -moz-box-shadow:
-    0px 1px 0px hsl(var(--sui-lightness-lowest), 0.1);
+    0px 1px 0px hsl(var(--sui-fg-base-hsl), 0.1);
   box-shadow:
-    0px 1px 0px hsl(var(--sui-lightness-lowest), 0.1);
+    0px 1px 0px hsl(var(--sui-fg-base-hsl), 0.1);
 }
 .ui.vertical.segment:first-child {
   padding-top: 0em;
@@ -83,11 +83,11 @@
   border-radius: 0px;
 
   -webkit-box-shadow:
-    1px 0px 0px hsl(var(--sui-lightness-lowest), 0.1);
+    1px 0px 0px hsl(var(--sui-fg-base-hsl), 0.1);
   -moz-box-shadow:
-    1px 0px 0px hsl(var(--sui-lightness-lowest), 0.1);
+    1px 0px 0px hsl(var(--sui-fg-base-hsl), 0.1);
   box-shadow:
-    1px 0px 0px hsl(var(--sui-lightness-lowest), 0.1);
+    1px 0px 0px hsl(var(--sui-fg-base-hsl), 0.1);
 }
 .ui.horizontal.segment:first-child {
   padding-left: 0em;
@@ -133,15 +133,15 @@
 .ui.piled.segment {
   margin: 2em 0em;
   -webkit-box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.15);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.15);
   -moz-box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.15);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.15);
   -ms-box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.15);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.15);
   -o-box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.15);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.15);
   box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.15);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.15);
 }
 .ui.piled.segment:first-child {
   margin-top: 0em;
@@ -161,11 +161,11 @@
   width: 100%;
 
   -webkit-box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.1);
   -moz-box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.1);
   box-shadow:
-    0px 0px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
+    0px 0px 1px 1px hsl(var(--sui-fg-base-hsl), 0.1);
 }
 .ui.piled.segment:after {
   -webkit-transform: rotate(1.2deg);
@@ -200,8 +200,8 @@
   bottom: -3px;
   left: 0%;
 
-  border-top: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
-  background-color: hsl(var(--sui-lightness-lowest), 0.02);
+  border-top: 1px solid hsl(var(--sui-fg-base-hsl), 0.1);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.02);
 
   width: 100%;
   height: 5px;
@@ -214,8 +214,8 @@
 /* Inverted */
 .ui.stacked.inverted.segment:after,
 .ui.stacked.inverted.segment:before {
-  background-color: hsl(var(--sui-lightness-highest), 0.1);
-  border-top: 1px solid hsl(var(--sui-lightness-highest), 0.35);
+  background-color: hsl(var(--sui-bg-base-hsl), 0.1);
+  border-top: 1px solid hsl(var(--sui-bg-base-hsl), 0.35);
 }
 
 /*-------------------
@@ -235,9 +235,9 @@
 --------------------*/
 
 .ui.raised.segment {
-  -webkit-box-shadow: 0px 1px 2px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  -moz-box-shadow: 0px 1px 2px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  box-shadow: 0px 1px 2px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  -webkit-box-shadow: 0px 1px 2px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  -moz-box-shadow: 0px 1px 2px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  box-shadow: 0px 1px 2px 1px hsl(var(--sui-fg-base-hsl), 0.1);
 }
 
 
@@ -318,31 +318,31 @@
 
 .ui.inverted.black.segment {
   background-color: var(--sui-black-7) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.inverted.blue.segment {
   background-color: var(--sui-blue-4) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.inverted.green.segment {
   background-color: var(--sui-green-7) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.inverted.red.segment {
   background-color: var(--sui-red-8) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.inverted.orange.segment {
   background-color: var(--sui-orange-2) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.inverted.purple.segment {
   background-color: var(--sui-purple-3) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 .ui.inverted.teal.segment {
   background-color: var(--sui-teal-3) !important;
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 
 
@@ -388,15 +388,15 @@
   box-shadow: none;
 }
 .ui.inverted.segment .segment {
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
 }
 .ui.inverted.segment .inverted.segment {
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
   background-color: var(--sui-black-2);
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 
 /*-------------------
@@ -420,20 +420,20 @@
 
 .ui.secondary.inverted.segment {
   background-color: var(--sui-grey-2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(hsl(var(--sui-lightness-highest), 0.3)), to(hsl(var(--sui-lightness-highest), 0.3)));
-  background-image: -webkit-linear-gradient(hsl(var(--sui-lightness-highest), 0.3) 0%, hsl(var(--sui-lightness-highest), 0.3) 100%);
-  background-image: -moz-linear-gradient(hsl(var(--sui-lightness-highest), 0.3) 0%, hsl(var(--sui-lightness-highest), 0.3) 100%);
-  background-image: -o-linear-gradient(hsl(var(--sui-lightness-highest), 0.3) 0%, hsl(var(--sui-lightness-highest), 0.3) 100%);
-  background-image: linear-gradient(hsl(var(--sui-lightness-highest), 0.3) 0%, hsl(var(--sui-lightness-highest), 0.3) 100%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(hsl(var(--sui-bg-base-hsl), 0.3)), to(hsl(var(--sui-bg-base-hsl), 0.3)));
+  background-image: -webkit-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.3) 0%, hsl(var(--sui-bg-base-hsl), 0.3) 100%);
+  background-image: -moz-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.3) 0%, hsl(var(--sui-bg-base-hsl), 0.3) 100%);
+  background-image: -o-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.3) 0%, hsl(var(--sui-bg-base-hsl), 0.3) 100%);
+  background-image: linear-gradient(hsl(var(--sui-bg-base-hsl), 0.3) 0%, hsl(var(--sui-bg-base-hsl), 0.3) 100%);
   color: var(--sui-white-12);
 }
 .ui.tertiary.inverted.segment {
   background-color: var(--sui-grey-2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(hsl(var(--sui-lightness-highest), 0.6)), to(hsl(var(--sui-lightness-highest), 0.6)));
-  background-image: -webkit-linear-gradient(hsl(var(--sui-lightness-highest), 0.6) 0%, hsl(var(--sui-lightness-highest), 0.6) 100%);
-  background-image: -moz-linear-gradient(hsl(var(--sui-lightness-highest), 0.6) 0%, hsl(var(--sui-lightness-highest), 0.6) 100%);
-  background-image: -o-linear-gradient(hsl(var(--sui-lightness-highest), 0.6) 0%, hsl(var(--sui-lightness-highest), 0.6) 100%);
-  background-image: linear-gradient(hsl(var(--sui-lightness-highest), 0.6) 0%, hsl(var(--sui-lightness-highest), 0.6) 100%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(hsl(var(--sui-bg-base-hsl), 0.6)), to(hsl(var(--sui-bg-base-hsl), 0.6)));
+  background-image: -webkit-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.6) 0%, hsl(var(--sui-bg-base-hsl), 0.6) 100%);
+  background-image: -moz-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.6) 0%, hsl(var(--sui-bg-base-hsl), 0.6) 100%);
+  background-image: -o-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.6) 0%, hsl(var(--sui-bg-base-hsl), 0.6) 100%);
+  background-image: linear-gradient(hsl(var(--sui-bg-base-hsl), 0.6) 0%, hsl(var(--sui-bg-base-hsl), 0.6) 100%);
   color: var(--sui-white-3);
 }
 

@@ -24,9 +24,9 @@
   font-size: 0px;
   font-weight: normal;
 
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  -moz-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
 
   -webkit-border-radius: 0.1875rem;
   -moz-border-radius: 0.1875rem;
@@ -61,7 +61,7 @@
   -ms-user-select: none;
   user-select: none;
 
-  -webkit-tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
+  -webkit-tap-highlight-color: hsl(var(--sui-fg-base-hsl), 0);
 
   vertical-align: middle;
 
@@ -102,7 +102,7 @@
 /* Text Color */
 .ui.menu .item,
 .ui.menu .item > a:not(.button) {
-  color: hsl(var(--sui-lightness-lowest), 0.75);
+  color: hsl(var(--sui-fg-base-hsl), 0.75);
 }
 .ui.menu .item .item,
 .ui.menu .item .item > a:not(.button) {
@@ -114,20 +114,20 @@
 }
 .ui.menu .dropdown .menu .item,
 .ui.menu .dropdown .menu .item a:not(.button) {
-  color: hsl(var(--sui-lightness-lowest), 0.75);
+  color: hsl(var(--sui-fg-base-hsl), 0.75);
 }
 /* Hover */
 .ui.menu .item .menu a.item:hover,
 .ui.menu .item .menu .link.item:hover {
-  color: hsl(var(--sui-lightness-lowest), 0.85);
+  color: hsl(var(--sui-fg-base-hsl), 0.85);
 }
 .ui.menu .dropdown .menu .item a:not(.button):hover {
-  color: hsl(var(--sui-lightness-lowest), 0.85);
+  color: hsl(var(--sui-fg-base-hsl), 0.85);
 }
 /* Active */
 .ui.menu .active.item,
 .ui.menu .active.item a:not(.button) {
-  color: hsl(var(--sui-lightness-lowest), 0.85);
+  color: hsl(var(--sui-fg-base-hsl), 0.85);
 
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -144,9 +144,9 @@
 
   padding: 0.83em 0.95em;
 
-  border-top: 0em solid hsl(var(--sui-lightness-lowest), 0);
+  border-top: 0em solid hsl(var(--sui-fg-base-hsl), 0);
 
-  -webkit-tap-highlight-color: hsl(var(--sui-lightness-lowest), 0);
+  -webkit-tap-highlight-color: hsl(var(--sui-fg-base-hsl), 0);
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   user-select: none;
@@ -177,9 +177,9 @@
   left: 0px;
   width: 1px;
   height: 100%;
-  background-image: linear-gradient(hsl(var(--sui-lightness-lowest), 0.05) 0%,
-      hsl(var(--sui-lightness-lowest), 0.1) 50%,
-      hsl(var(--sui-lightness-lowest), 0.05) 100%);
+  background-image: linear-gradient(hsl(var(--sui-fg-base-hsl), 0.05) 0%,
+      hsl(var(--sui-fg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-fg-base-hsl), 0.05) 100%);
 }
 /*rtl:ignore*/
 .ui.menu > .menu:not(.right):first-child > .item:first-child:before,
@@ -204,7 +204,7 @@
   user-select: text;
 
   line-height: 1.3;
-  color: hsl(var(--sui-lightness-lowest), 0.6);
+  color: hsl(var(--sui-fg-base-hsl), 0.6);
 }
 .ui.menu .item > p:first-child {
   margin-top: 0px;
@@ -284,7 +284,7 @@
 ---------------*/
 
 .ui.menu .header.item {
-  background-color: hsl(var(--sui-lightness-lowest), 0.04);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.04);
   margin: 0em;
 }
 .ui.vertical.menu .header.item {
@@ -304,7 +304,7 @@
   left: 1px;
   margin: 0px;
   min-width: calc(100% - 1px);
-  box-shadow: 0 1px 1px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  box-shadow: 0 1px 1px 1px hsl(var(--sui-fg-base-hsl), 0.1);
 }
 .ui.secondary.menu .dropdown.item .menu {
   left: 0px;
@@ -318,7 +318,7 @@
 }
 .ui.menu .dropdown.item .menu .item {
   width: 100%;
-  color: hsl(var(--sui-lightness-lowest), 0.75);
+  color: hsl(var(--sui-fg-base-hsl), 0.75);
 }
 .ui.menu .dropdown.item .menu .active.item {
   box-shadow: none !important;
@@ -333,8 +333,8 @@
 ---------------*/
 
 .ui.menu .item > .label {
-  background-color: hsl(var(--sui-lightness-lowest), 0.35);
-  color: var(--sui-text-light);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.35);
+  color: var(--sui-text-inverted);
   margin: -0.15em 0em -0.15em 0.5em;
   padding: 0.3em 0.8em;
   vertical-align: baseline;
@@ -366,10 +366,10 @@
 .ui.menu a.item:hover,
 .ui.menu .ui.dropdown .menu .item:hover {
   cursor: pointer;
-  background-color: hsl(var(--sui-lightness-lowest), 0.02);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.02);
 }
 .ui.menu .ui.dropdown.item.active {
-  background-color: hsl(var(--sui-lightness-lowest), 0.02);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.02);
 
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -392,7 +392,7 @@
 .ui.menu .link.item:active,
 .ui.menu a.item:active,
 .ui.menu .ui.dropdown .menu .item:active {
-  background-color: hsl(var(--sui-lightness-lowest), 0.05);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.05);
 
 }
 
@@ -401,8 +401,8 @@
 ---------------*/
 
 .ui.menu .active.item {
-  background-color: hsl(var(--sui-lightness-lowest), 0.01);
-  color: hsl(var(--sui-lightness-lowest), 0.95);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.01);
+  color: hsl(var(--sui-fg-base-hsl), 0.95);
 
   -webkit-box-shadow: 0em 0.2em 0em inset;
   -moz-box-shadow: 0em 0.2em 0em inset;
@@ -441,7 +441,7 @@
   padding-left: 1.5rem;
 }
 .ui.vertical.menu .item .menu .active.item {
-  background-color: hsl(var(--sui-lightness-lowest), 0.03);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.03);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -454,7 +454,7 @@
 .ui.menu .item.disabled,
 .ui.menu .item.disabled:hover {
   cursor: default;
-  color: hsl(var(--sui-lightness-lowest), 0.2);
+  color: hsl(var(--sui-fg-base-hsl), 0.2);
   background-color: transparent !important;
 }
 
@@ -475,7 +475,7 @@
 
   width: 100%;
   height: 100%;
-  background: hsl(var(--sui-lightness-highest), 0.8) url(../images/loader-large.gif) no-repeat 50% 50%;
+  background: hsl(var(--sui-bg-base-hsl), 0.8) url(../images/loader-large.gif) no-repeat 50% 50%;
   visibility: visible;
 }
 
@@ -492,7 +492,7 @@
   display: block;
   height: auto !important;
   border-top: none;
-  border-left: 0em solid hsl(var(--sui-lightness-lowest), 0);
+  border-left: 0em solid hsl(var(--sui-fg-base-hsl), 0);
   border-right: none;
 }
 .ui.vertical.menu > .item:first-child {
@@ -525,25 +525,25 @@
   width: 100%;
   height: 1px;
   background-image: -webkit-linear-gradient(left,
-      hsl(var(--sui-lightness-lowest), 0.03) 0%,
-      hsl(var(--sui-lightness-lowest), 0.1) 1.5em,
-      hsl(var(--sui-lightness-lowest), 0.03) 100%);
+      hsl(var(--sui-fg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-fg-base-hsl), 0.1) 1.5em,
+      hsl(var(--sui-fg-base-hsl), 0.03) 100%);
   background-image: -moz-linear-gradient(left,
-      hsl(var(--sui-lightness-lowest), 0.03) 0%,
-      hsl(var(--sui-lightness-lowest), 0.1) 1.5em,
-      hsl(var(--sui-lightness-lowest), 0.03) 100%);
+      hsl(var(--sui-fg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-fg-base-hsl), 0.1) 1.5em,
+      hsl(var(--sui-fg-base-hsl), 0.03) 100%);
   background-image: -o-linear-gradient(left,
-      hsl(var(--sui-lightness-lowest), 0.03) 0%,
-      hsl(var(--sui-lightness-lowest), 0.1) 1.5em,
-      hsl(var(--sui-lightness-lowest), 0.03) 100%);
+      hsl(var(--sui-fg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-fg-base-hsl), 0.1) 1.5em,
+      hsl(var(--sui-fg-base-hsl), 0.03) 100%);
   background-image: -ms-linear-gradient(left,
-      hsl(var(--sui-lightness-lowest), 0.03) 0%,
-      hsl(var(--sui-lightness-lowest), 0.1) 1.5em,
-      hsl(var(--sui-lightness-lowest), 0.03) 100%);
+      hsl(var(--sui-fg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-fg-base-hsl), 0.1) 1.5em,
+      hsl(var(--sui-fg-base-hsl), 0.03) 100%);
   background-image: linear-gradient(to right,
-      hsl(var(--sui-lightness-lowest), 0.03) 0%,
-      hsl(var(--sui-lightness-lowest), 0.1) 1.5em,
-      hsl(var(--sui-lightness-lowest), 0.03) 100%);
+      hsl(var(--sui-fg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-fg-base-hsl), 0.1) 1.5em,
+      hsl(var(--sui-fg-base-hsl), 0.03) 100%);
 }
 
 .ui.vertical.menu .item:first-child:before {
@@ -595,13 +595,13 @@
 ---------------*/
 
 .ui.tiered.menu > .sub.menu > .item {
-  color: hsl(var(--sui-lightness-lowest), 0.4);
+  color: hsl(var(--sui-fg-base-hsl), 0.4);
 }
 .ui.tiered.menu > .menu > .item:hover {
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 .ui.tiered.menu .item.active {
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 .ui.tiered.menu > .menu .item.active:after {
   position: absolute;
@@ -615,15 +615,15 @@
   background-color: var(--sui-white-13);
 }
 .ui.tiered.menu .sub.menu {
-  background-color: hsl(var(--sui-lightness-lowest), 0.01);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.01);
   border-radius: 0em;
-  border-top: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
+  border-top: 1px solid hsl(var(--sui-fg-base-hsl), 0.1);
 
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 .ui.tiered.menu .sub.menu .item {
   font-size: 0.875rem;
@@ -641,7 +641,7 @@
   -moz-box-shadow: none;
   box-shadow: none;
 
-  color: hsl(var(--sui-lightness-lowest), 0.7) !important;
+  color: hsl(var(--sui-fg-base-hsl), 0.7) !important;
 }
 .ui.tiered.menu .sub.menu .active.item:after {
   display: none;
@@ -649,24 +649,24 @@
 
 /* Inverted */
 .ui.inverted.tiered.menu > .menu > .item {
-  color: hsl(var(--sui-lightness-highest), 0.5);
+  color: hsl(var(--sui-bg-base-hsl), 0.5);
 }
 .ui.inverted.tiered.menu .sub.menu {
-  background-color: hsl(var(--sui-lightness-lowest), 0.2);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.2);
 }
 .ui.inverted.tiered.menu .sub.menu .item {
-  color: hsl(var(--sui-lightness-highest), 0.6);
+  color: hsl(var(--sui-bg-base-hsl), 0.6);
 }
 
 .ui.inverted.tiered.menu > .menu > .item:hover {
-  color: hsl(var(--sui-lightness-highest), 0.9);
+  color: hsl(var(--sui-bg-base-hsl), 0.9);
 }
 .ui.inverted.tiered.menu .active.item:after {
   display: none;
 }
 .ui.inverted.tiered.menu > .sub.menu > .active.item,
 .ui.inverted.tiered.menu > .menu > .active.item {
-  color: hsl(var(--sui-lightness-highest), 1) !important;
+  color: hsl(var(--sui-bg-base-hsl), 1) !important;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -704,7 +704,7 @@
 
   padding-left: 1.4em;
   padding-right: 1.4em;
-  color: hsl(var(--sui-lightness-lowest), 0.6);
+  color: hsl(var(--sui-fg-base-hsl), 0.6);
 }
 .ui.tabular.menu .item:before {
   display: none;
@@ -713,7 +713,7 @@
 /* Hover */
 .ui.tabular.menu .item:hover {
   background-color: transparent;
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 
 /* Active */
@@ -721,7 +721,7 @@
   position: relative;
 
   background-color: var(--sui-white-15);
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 
   border-color: var(--sui-grey-20);
   font-weight: bold;
@@ -773,7 +773,7 @@
 .ui.pagination.menu .active.item {
   border-top: none;
   padding-top: 0.83em;
-  background-color: hsl(var(--sui-lightness-lowest), 0.05);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.05);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -830,7 +830,7 @@
   transition: none;
 }
 .ui.secondary.menu .header.item {
-  border-right: 0.1em solid hsl(var(--sui-lightness-lowest), 0.1);
+  border-right: 0.1em solid hsl(var(--sui-fg-base-hsl), 0.1);
   background-color: transparent;
 
   -webkit-border-radius: 0em;
@@ -847,7 +847,7 @@
 /* active */
 .ui.secondary.menu > .menu > .active.item,
 .ui.secondary.menu > .active.item {
-  background-color: hsl(var(--sui-lightness-lowest), 0.08);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.08);
   opacity: 1;
 
   -webkit-box-shadow: none;
@@ -863,14 +863,14 @@
 /* inverted */
 .ui.secondary.inverted.menu .link.item,
 .ui.secondary.inverted.menu a.item {
-  color: hsl(var(--sui-lightness-highest), 0.5);
+  color: hsl(var(--sui-bg-base-hsl), 0.5);
 }
 .ui.secondary.inverted.menu .link.item:hover,
 .ui.secondary.inverted.menu a.item:hover {
-  color: hsl(var(--sui-lightness-highest), 0.9);
+  color: hsl(var(--sui-bg-base-hsl), 0.9);
 }
 .ui.secondary.inverted.menu .active.item {
-  background-color: hsl(var(--sui-lightness-highest), 0.1);
+  background-color: hsl(var(--sui-bg-base-hsl), 0.1);
 }
 
 
@@ -889,7 +889,7 @@
 -----------------------*/
 
 .ui.secondary.pointing.menu {
-  border-bottom: 3px solid hsl(var(--sui-lightness-lowest), 0.1);
+  border-bottom: 3px solid hsl(var(--sui-fg-base-hsl), 0.1);
 }
 
 .ui.secondary.pointing.menu > .menu > .item,
@@ -897,7 +897,7 @@
   margin: 0em 0em -3px;
   padding: 0.6em 0.95em;
 
-  border-bottom: 3px solid hsl(var(--sui-lightness-lowest), 0);
+  border-bottom: 3px solid hsl(var(--sui-fg-base-hsl), 0);
 
   -webkit-border-radius: 0em;
   -moz-border-radius: 0em;
@@ -921,7 +921,7 @@
   background-color: transparent !important;
   border-right-width: 0px !important;
   font-weight: bold !important;
-  color: hsl(var(--sui-lightness-lowest), 0.8) !important;
+  color: hsl(var(--sui-fg-base-hsl), 0.8) !important;
 }
 .ui.secondary.pointing.menu .text.item {
   box-shadow: none !important;
@@ -937,7 +937,7 @@
 .ui.secondary.pointing.menu > .menu > a.item:hover,
 .ui.secondary.pointing.menu > a.item:hover {
   background-color: transparent;
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
 }
 
 /* Down */
@@ -946,14 +946,14 @@
 .ui.secondary.pointing.menu > .menu > a.item:active,
 .ui.secondary.pointing.menu > a.item:active {
   background-color: transparent;
-  border-color: hsl(var(--sui-lightness-lowest), 0.2);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.2);
 }
 
 /* Active */
 .ui.secondary.pointing.menu > .menu > .item.active,
 .ui.secondary.pointing.menu > .item.active {
   background-color: transparent;
-  border-color: hsl(var(--sui-lightness-lowest), 0.4);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.4);
 
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -966,7 +966,7 @@
 
 .ui.secondary.vertical.pointing.menu {
   border: none;
-  border-right: 3px solid hsl(var(--sui-lightness-lowest), 0.1);
+  border-right: 3px solid hsl(var(--sui-fg-base-hsl), 0.1);
 }
 .ui.secondary.vertical.menu > .item {
   border: none;
@@ -993,20 +993,20 @@
 /* Hover */
 .ui.secondary.vertical.pointing.menu > .item:hover {
   background-color: transparent;
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
 }
 
 /* Down */
 .ui.secondary.vertical.pointing.menu > .item:active {
   background-color: transparent;
-  border-color: hsl(var(--sui-lightness-lowest), 0.2);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.2);
 }
 
 /* Active */
 .ui.secondary.vertical.pointing.menu > .item.active {
   background-color: transparent;
-  border-color: hsl(var(--sui-lightness-lowest), 0.4);
-  color: hsl(var(--sui-lightness-lowest), 0.85);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.4);
+  color: hsl(var(--sui-fg-base-hsl), 0.85);
 }
 
 /*--------------
@@ -1018,32 +1018,32 @@
 }
 
 .ui.secondary.inverted.pointing.menu {
-  border-bottom: 3px solid hsl(var(--sui-lightness-highest), 0.1);
+  border-bottom: 3px solid hsl(var(--sui-bg-base-hsl), 0.1);
 }
 .ui.secondary.inverted.pointing.menu > .item {
-  color: hsl(var(--sui-lightness-highest), 0.7);
+  color: hsl(var(--sui-bg-base-hsl), 0.7);
 }
 .ui.secondary.inverted.pointing.menu > .header.item {
-  color: var(--sui-text-light) !important;
+  color: var(--sui-text-inverted) !important;
 }
 
 /* Hover */
 .ui.secondary.inverted.pointing.menu > .menu > .item:hover,
 .ui.secondary.inverted.pointing.menu > .item:hover {
-  color: hsl(var(--sui-lightness-highest), 0.85);
+  color: hsl(var(--sui-bg-base-hsl), 0.85);
 }
 
 /* Down */
 .ui.secondary.inverted.pointing.menu > .menu > .item:active,
 .ui.secondary.inverted.pointing.menu > .item:active {
-  border-color: hsl(var(--sui-lightness-highest), 0.4);
+  border-color: hsl(var(--sui-bg-base-hsl), 0.4);
 }
 
 /* Active */
 .ui.secondary.inverted.pointing.menu > .menu > .item.active,
 .ui.secondary.inverted.pointing.menu > .item.active {
-  border-color: hsl(var(--sui-lightness-highest), 0.8);
-  color: hsl(var(--sui-lightness-highest), 1);
+  border-color: hsl(var(--sui-bg-base-hsl), 0.8);
+  color: hsl(var(--sui-bg-base-hsl), 1);
 }
 
 /*---------------------
@@ -1051,7 +1051,7 @@
 ----------------------*/
 
 .ui.secondary.inverted.vertical.pointing.menu {
-  border-right: 3px solid hsl(var(--sui-lightness-highest), 0.1);
+  border-right: 3px solid hsl(var(--sui-bg-base-hsl), 0.1);
   border-bottom: none;
 }
 
@@ -1212,10 +1212,10 @@
 
 /*--- inverted ---*/
 .ui.inverted.icon.menu .item {
-  color: hsl(var(--sui-lightness-highest), 0.8);
+  color: hsl(var(--sui-bg-base-hsl), 0.8);
 }
 .ui.inverted.icon.menu .icon {
-  color: hsl(var(--sui-lightness-highest), 1);
+  color: hsl(var(--sui-bg-base-hsl), 1);
 }
 
 /*--------------
@@ -1285,7 +1285,7 @@
 .ui.inverted.menu .header.item {
   margin: 0em;
 
-  background-color: hsl(var(--sui-lightness-lowest), 0.3);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.3);
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1293,62 +1293,62 @@
 
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a {
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 .ui.inverted.menu .item .item,
 .ui.inverted.menu .item .item > a {
-  color: hsl(var(--sui-lightness-highest), 0.8);
+  color: hsl(var(--sui-bg-base-hsl), 0.8);
 }
 .ui.inverted.menu .dropdown .menu .item,
 .ui.inverted.menu .dropdown .menu .item a {
-  color: hsl(var(--sui-lightness-lowest), 0.75) !important;
+  color: hsl(var(--sui-fg-base-hsl), 0.75) !important;
 }
 .ui.inverted.menu .item.disabled,
 .ui.inverted.menu .item.disabled:hover {
-  color: hsl(var(--sui-lightness-highest), 0.2);
+  color: hsl(var(--sui-bg-base-hsl), 0.2);
 }
 
 
 
 /*--- Border ---*/
 .ui.inverted.menu .item:before {
-  background-image: -webkit-linear-gradient(hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
-  background-image: -moz-linear-gradient(hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
-  background-image: -o-linear-gradient(hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
-  background-image: -ms-linear-gradient(hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
-  background-image: linear-gradient(hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
+  background-image: -webkit-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
+  background-image: -moz-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
+  background-image: -o-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
+  background-image: -ms-linear-gradient(hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
+  background-image: linear-gradient(hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
 }
 .ui.vertical.inverted.menu .item:before {
   background-image: -webkit-linear-gradient(left,
-      hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
+      hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
   background-image: -moz-linear-gradient(left,
-      hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
+      hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
   background-image: -o-linear-gradient(left,
-      hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
+      hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
   background-image: -ms-linear-gradient(left,
-      hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
+      hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
   background-image: linear-gradient(to right,
-      hsl(var(--sui-lightness-highest), 0.03) 0%,
-      hsl(var(--sui-lightness-highest), 0.1) 50%,
-      hsl(var(--sui-lightness-highest), 0.03) 100%);
+      hsl(var(--sui-bg-base-hsl), 0.03) 0%,
+      hsl(var(--sui-bg-base-hsl), 0.1) 50%,
+      hsl(var(--sui-bg-base-hsl), 0.03) 100%);
 }
 
 /*--- Hover ---*/
@@ -1356,13 +1356,13 @@
 .ui.inverted.menu .link.item:hover,
 .ui.inverted.menu a.item:hover,
 .ui.inverted.menu .dropdown.item:hover {
-  background-color: hsl(var(--sui-lightness-highest), 0.1);
+  background-color: hsl(var(--sui-bg-base-hsl), 0.1);
 }
 .ui.inverted.menu a.item:hover,
 .ui.inverted.menu .item > a:hover,
 .ui.inverted.menu .item .menu a.item:hover,
 .ui.inverted.menu .item .menu .link.item:hover {
-  color: hsl(var(--sui-lightness-highest), 1);
+  color: hsl(var(--sui-bg-base-hsl), 1);
 }
 
 /*--- Down ---*/
@@ -1370,21 +1370,21 @@
 .ui.inverted.menu .dropdown.item:active,
 .ui.inverted.menu .link.item:active,
 .ui.inverted.menu a.item:active {
-  background-color: hsl(var(--sui-lightness-highest), 0.15);
+  background-color: hsl(var(--sui-bg-base-hsl), 0.15);
 }
 
 /*--- Active ---*/
 .ui.inverted.menu .active.item {
   box-shadow: none !important;
-  background-color: hsl(var(--sui-lightness-highest), 0.2);
+  background-color: hsl(var(--sui-bg-base-hsl), 0.2);
 }
 .ui.inverted.menu .active.item,
 .ui.inverted.menu .active.item a {
-  color: hsl(var(--sui-lightness-highest), 1) !important;
+  color: hsl(var(--sui-bg-base-hsl), 1) !important;
 }
 .ui.inverted.vertical.menu .item .menu .active.item {
-  background-color: hsl(var(--sui-lightness-highest), 0.2);
-  color: hsl(var(--sui-lightness-highest), 1);
+  background-color: hsl(var(--sui-bg-base-hsl), 0.2);
+  color: hsl(var(--sui-bg-base-hsl), 1);
 }
 
 /*--- Pointers ---*/
@@ -1402,23 +1402,23 @@
 ---------------*/
 
 .ui.selection.menu > .item {
-  color: hsl(var(--sui-lightness-lowest), 0.4);
+  color: hsl(var(--sui-fg-base-hsl), 0.4);
 }
 .ui.selection.menu > .item:hover {
-  color: hsl(var(--sui-lightness-lowest), 0.6);
+  color: hsl(var(--sui-fg-base-hsl), 0.6);
 }
 .ui.selection.menu > .item.active {
-  color: hsl(var(--sui-lightness-lowest), 0.85);
+  color: hsl(var(--sui-fg-base-hsl), 0.85);
 }
 
 .ui.inverted.selection.menu > .item {
-  color: hsl(var(--sui-lightness-highest), 0.4);
+  color: hsl(var(--sui-bg-base-hsl), 0.4);
 }
 .ui.inverted.selection.menu > .item:hover {
-  color: hsl(var(--sui-lightness-highest), 0.9);
+  color: hsl(var(--sui-bg-base-hsl), 0.9);
 }
 .ui.inverted.selection.menu > .item.active {
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 
 
@@ -1662,8 +1662,8 @@
   height: 0.6em;
 
   border: none;
-  border-bottom: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
-  border-right: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
+  border-bottom: 1px solid hsl(var(--sui-fg-base-hsl), 0.1);
+  border-right: 1px solid hsl(var(--sui-fg-base-hsl), 0.1);
 
   background-image: none;
 
@@ -1698,8 +1698,8 @@
   left: auto;
 
   border: none;
-  border-top: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
-  border-right: 1px solid hsl(var(--sui-lightness-lowest), 0.1);
+  border-top: 1px solid hsl(var(--sui-fg-base-hsl), 0.1);
+  border-right: 1px solid hsl(var(--sui-fg-base-hsl), 0.1);
 }
 
 /* Colors */

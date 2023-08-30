@@ -34,7 +34,7 @@
   width: 1em;
   height: auto;
   padding: 0em;
-  color: hsl(var(--sui-lightness-lowest), 0.15);
+  color: hsl(var(--sui-fg-base-hsl), 0.15);
   font-weight: normal;
   font-style: normal;
 }

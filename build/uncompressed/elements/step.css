@@ -39,8 +39,8 @@
      -moz-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  -webkit-box-shadow: -1px -1px 0 0 hsl(var(--sui-lightness-lowest), 0.15) inset;
-          box-shadow: -1px -1px 0 0 hsl(var(--sui-lightness-lowest), 0.15) inset;
+  -webkit-box-shadow: -1px -1px 0 0 hsl(var(--sui-fg-base-hsl), 0.15) inset;
+          box-shadow: -1px -1px 0 0 hsl(var(--sui-fg-base-hsl), 0.15) inset;
 }
 .ui.step,
 .ui.steps .step,
@@ -115,8 +115,8 @@
   display: inline-block;
   font-size: 0em;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
-  box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1);
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
+  box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1);
   line-height: 1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -147,7 +147,7 @@
 .ui.step:hover,
 .ui.step.hover {
   background-color: var(--sui-white-9);
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 .ui.steps .step.hover:after,
 .ui.steps .step:hover:after,
@@ -173,7 +173,7 @@
 .ui.active.step {
   cursor: auto;
   background-color: var(--sui-grey-2);
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
   font-weight: bold;
 }
 .ui.steps .step.active:after,

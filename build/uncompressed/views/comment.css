@@ -63,7 +63,7 @@
 .ui.comments .comment .metadata {
   display: inline-block;
   margin-left: 0.3em;
-  color: hsl(var(--sui-lightness-lowest), 0.4);
+  color: hsl(var(--sui-fg-base-hsl), 0.4);
 }
 .ui.comments .comment .metadata > * {
   display: inline-block;
@@ -85,11 +85,11 @@
 .ui.comments .comment .actions a {
   display: inline-block;
   margin: 0em 0.3em 0em 0em;
-  color: hsl(var(--sui-lightness-lowest), 0.3);
+  color: hsl(var(--sui-fg-base-hsl), 0.3);
 }
 .ui.comments .comment .actions a.active,
 .ui.comments .comment .actions a:hover {
-  color: hsl(var(--sui-lightness-lowest), 0.6);
+  color: hsl(var(--sui-fg-base-hsl), 0.6);
 }
 /*--------------------
       Reply Form
@@ -147,8 +147,8 @@
 .ui.threaded.comments .comment .comments {
   margin-left: 2em !important;
   padding-left: 2em !important;
-  -webkit-box-shadow: -1px 0px 0px hsl(var(--sui-lightness-lowest), 0.05);
-  box-shadow: -1px 0px 0px hsl(var(--sui-lightness-lowest), 0.05);
+  -webkit-box-shadow: -1px 0px 0px hsl(var(--sui-fg-base-hsl), 0.05);
+  box-shadow: -1px 0px 0px hsl(var(--sui-fg-base-hsl), 0.05);
 }
 /*--------------------
         Minimal

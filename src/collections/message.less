@@ -23,7 +23,7 @@
   padding: 1em;
 
   line-height: 1.33;
-  color: hsl(var(--sui-lightness-lowest), 0.6);
+  color: hsl(var(--sui-fg-base-hsl), 0.6);
 
   -webkit-transition:
     opacity 0.1s ease,
@@ -203,11 +203,11 @@
   border-radius: 0.325em 0.325em 0em 0em;
 
   -webkit-box-shadow:
-    0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+    0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
   -moz-box-shadow:
-    0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+    0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
   box-shadow:
-    0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+    0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
 }
 .ui.attached + .ui.attached.message:not(.top):not(.bottom) {
   margin-top: -1px;
@@ -256,8 +256,8 @@
 ---------------*/
 
 .ui.inverted.message {
-  background-color: hsl(var(--sui-lightness-highest), 0.05);
-  color: hsl(var(--sui-lightness-highest), 0.95);
+  background-color: hsl(var(--sui-bg-base-hsl), 0.05);
+  color: hsl(var(--sui-bg-base-hsl), 0.95);
 }
 
 
@@ -267,14 +267,14 @@
 
 .ui.floating.message {
   -webkit-box-shadow:
-    0px 1px 3px 0px hsl(var(--sui-lightness-lowest), 0.1),
-    0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.05) inset;
+    0px 1px 3px 0px hsl(var(--sui-fg-base-hsl), 0.1),
+    0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.05) inset;
   -moz-box-shadow:
-    0px 1px 3px 0px hsl(var(--sui-lightness-lowest), 0.1),
-    0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.05) inset;
+    0px 1px 3px 0px hsl(var(--sui-fg-base-hsl), 0.1),
+    0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.05) inset;
   box-shadow:
-    0px 1px 3px 0px hsl(var(--sui-lightness-lowest), 0.1),
-    0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.05) inset;
+    0px 1px 3px 0px hsl(var(--sui-fg-base-hsl), 0.1),
+    0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.05) inset;
 }
 
 
@@ -284,7 +284,7 @@
 
 .ui.black.message {
   background-color: var(--sui-black-3);
-  color: hsl(var(--sui-lightness-highest), 0.95);
+  color: hsl(var(--sui-bg-base-hsl), 0.95);
 }
 
 

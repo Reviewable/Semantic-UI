@@ -17,7 +17,7 @@
 .ui.input {
   display: inline-block;
   position: relative;
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
 }
 .ui.input input {
   width: 100%;
@@ -26,14 +26,14 @@
   padding: 0.65em 1em;
   font-size: 1em;
   background-color: var(--sui-white-15);
-  border: 1px solid hsl(var(--sui-lightness-lowest), 0.15);
+  border: 1px solid hsl(var(--sui-fg-base-hsl), 0.15);
   outline: none;
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
   border-radius: 0.3125em;
   -webkit-transition: background-color 0.3s ease-out, -webkit-box-shadow 0.2s ease, border-color 0.2s ease;
   -moz-transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
   transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
-  -webkit-tap-highlight-color: hsl(var(--sui-lightness-highest), 0);
+  -webkit-tap-highlight-color: hsl(var(--sui-bg-base-hsl), 0);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -57,7 +57,7 @@
 ---------------------*/
 .ui.input input:active,
 .ui.input.down input {
-  border-color: hsl(var(--sui-lightness-lowest), 0.3);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.3);
   background-color: var(--sui-white-12);
 }
 /*--------------------
@@ -75,8 +75,8 @@
 ---------------------*/
 .ui.input.focus input,
 .ui.input input:focus {
-  border-color: hsl(var(--sui-lightness-lowest), 0.2);
-  color: hsl(var(--sui-lightness-lowest), 0.85);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.2);
+  color: hsl(var(--sui-fg-base-hsl), 0.85);
 }
 .ui.input.focus input input::-webkit-input-placeholder,
 .ui.input input:focus input::-webkit-input-placeholder {

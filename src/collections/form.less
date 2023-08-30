@@ -104,11 +104,11 @@
   font-size: 1em;
 
   background-color: var(--sui-white-15);
-  border: 1px solid hsl(var(--sui-lightness-lowest), 0.15);
+  border: 1px solid hsl(var(--sui-fg-base-hsl), 0.15);
   outline: none;
 
 
-  color: hsl(var(--sui-lightness-lowest), 0.7);
+  color: hsl(var(--sui-fg-base-hsl), 0.7);
 
   -webkit-border-radius: 0.3125em;
   -moz-border-radius: 0.3125em;
@@ -135,12 +135,12 @@
     box-shadow 0.2s ease,
     border-color 0.2s ease;
 
-  -webkit-box-shadow: 0em 0em 0em 0em hsl(var(--sui-lightness-lowest), 0.3) inset;
-  -moz-box-shadow: 0em 0em 0em 0em hsl(var(--sui-lightness-lowest), 0.3) inset;
-  box-shadow: 0em 0em 0em 0em hsl(var(--sui-lightness-lowest), 0.3) inset;
+  -webkit-box-shadow: 0em 0em 0em 0em hsl(var(--sui-fg-base-hsl), 0.3) inset;
+  -moz-box-shadow: 0em 0em 0em 0em hsl(var(--sui-fg-base-hsl), 0.3) inset;
+  box-shadow: 0em 0em 0em 0em hsl(var(--sui-fg-base-hsl), 0.3) inset;
 
   -webkit-appearance: none;
-  -webkit-tap-highlight-color: hsl(var(--sui-lightness-highest), 0);
+  -webkit-tap-highlight-color: hsl(var(--sui-bg-base-hsl), 0);
 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -230,16 +230,16 @@
 .ui.form input[type="time"]:focus,
 .ui.form input[type="url"]:focus,
 .ui.form input[type="week"]:focus .ui.form textarea:focus {
-  color: hsl(var(--sui-lightness-lowest), 0.85);
-  border-color: hsl(var(--sui-lightness-lowest), 0.2);
+  color: hsl(var(--sui-fg-base-hsl), 0.85);
+  border-color: hsl(var(--sui-fg-base-hsl), 0.2);
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 
   -webkit-appearance: none;
 
-  -webkit-box-shadow: 0.3em 0em 0em 0em hsl(var(--sui-lightness-lowest), 0.2) inset;
-  -moz-box-shadow: 0.3em 0em 0em 0em hsl(var(--sui-lightness-lowest), 0.2) inset;
-  box-shadow: 0.3em 0em 0em 0em hsl(var(--sui-lightness-lowest), 0.2) inset;
+  -webkit-box-shadow: 0.3em 0em 0em 0em hsl(var(--sui-fg-base-hsl), 0.2) inset;
+  -moz-box-shadow: 0.3em 0em 0em 0em hsl(var(--sui-fg-base-hsl), 0.2) inset;
+  box-shadow: 0.3em 0em 0em 0em hsl(var(--sui-fg-base-hsl), 0.2) inset;
 }
 
 /*--------------------
@@ -271,7 +271,7 @@
 .ui.form .fields.error .field .corner.label,
 .ui.form .field.error .corner.label {
   border-color: var(--sui-red-8);
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 
 .ui.form .fields.error .field textarea,
@@ -448,7 +448,7 @@
 
   width: 100%;
   height: 100%;
-  background: hsl(var(--sui-lightness-highest), 0.8) url(../images/loader-large.gif) no-repeat 50% 50%;
+  background: hsl(var(--sui-bg-base-hsl), 0.8) url(../images/loader-large.gif) no-repeat 50% 50%;
   visibility: visible;
 }
 
@@ -503,7 +503,7 @@
 ---------------------*/
 
 .ui.inverted.form label {
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 .ui.inverted.form .field.error textarea,
 .ui.inverted.form .field.error input[type="color"],
@@ -524,11 +524,11 @@
 }
 
 .ui.inverted.form .ui.checkbox label {
-  color: hsl(var(--sui-lightness-highest), 0.8);
+  color: hsl(var(--sui-bg-base-hsl), 0.8);
 }
 .ui.inverted.form .ui.checkbox label:hover,
 .ui.inverted.form .ui.checkbox .box:hover {
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 
 /*--------------------

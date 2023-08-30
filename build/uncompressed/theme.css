@@ -1,8 +1,8 @@
 :root,
 [color-sample] {
-  --sui-text-light: var(--sui-white-15);
-  --sui-lightness-highest: 0, 0%, 100%;
-  --sui-lightness-lowest: 0, 0%, 0%;
+  --sui-text-inverted: var(--sui-white-15);
+  --sui-bg-base-hsl: 0, 0%, 100%;
+  --sui-fg-base-hsl: 0, 0%, 0%;
   --sui-white-1: #E0E0E0;
   --sui-white-2: #EBEBEB;
   --sui-white-3: #EEEEEE;

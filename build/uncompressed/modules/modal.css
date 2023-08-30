@@ -42,7 +42,7 @@
   font-size: 1.25em;
   top: -1.75em;
   right: -1.75em;
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 .ui.modal > .close:hover {
   opacity: 1;
@@ -135,7 +135,7 @@
     margin-left: -46%;
   }
   .ui.modal > .close {
-    color: hsl(var(--sui-lightness-lowest), 0.8);
+    color: hsl(var(--sui-fg-base-hsl), 0.8);
     top: 1.5rem;
     right: 1rem;
   }
@@ -171,7 +171,7 @@
 .ui.basic.modal {
   background-color: transparent;
   border: none;
-  color: var(--sui-text-light);
+  color: var(--sui-text-inverted);
 }
 .ui.basic.modal > .close {
   top: 1.5rem;

@@ -52,8 +52,8 @@
   -webkit-transition: background-color 0.3s ease, -webkit-box-shadow 0.3s ease;
      -moz-transition: background-color 0.3s ease, box-shadow 0.3s ease;
           transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  -webkit-box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.2);
-          box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.2);
+  -webkit-box-shadow: 0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.2);
+          box-shadow: 0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.2);
 }
 /*--- Checkbox ---*/
 .ui.checkbox .box:after,
@@ -82,16 +82,16 @@
 /*--- Inside Label ---*/
 .ui.checkbox label {
   display: block;
-  color: hsl(var(--sui-lightness-lowest), 0.6);
+  color: hsl(var(--sui-fg-base-hsl), 0.6);
   -webkit-transition: color 0.2s ease;
      -moz-transition: color 0.2s ease;
           transition: color 0.2s ease;
 }
 .ui.checkbox label:hover {
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 .ui.checkbox input:focus ~ label {
-  color: hsl(var(--sui-lightness-lowest), 0.8);
+  color: hsl(var(--sui-fg-base-hsl), 0.8);
 }
 /*--- Outside Label  ---*/
 .ui.checkbox ~ label {
@@ -108,8 +108,8 @@
 /*--- Hover ---*/
 .ui.checkbox .box:hover::before,
 .ui.checkbox label:hover::before {
-  -webkit-box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.3);
-          box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.3);
+  -webkit-box-shadow: 0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.3);
+          box-shadow: 0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.3);
 }
 /*--- Down ---*/
 .ui.checkbox .box:active::before,
@@ -119,8 +119,8 @@
 /*--- Focus ---*/
 .ui.checkbox input:focus ~ .box:before,
 .ui.checkbox input:focus ~ label:before {
-  -webkit-box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.3);
-          box-shadow: 0em 0em 0em 1px hsl(var(--sui-lightness-lowest), 0.3);
+  -webkit-box-shadow: 0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.3);
+          box-shadow: 0em 0em 0em 1px hsl(var(--sui-fg-base-hsl), 0.3);
 }
 /*--- Active ---*/
 .ui.checkbox input:checked ~ .box:after,
@@ -135,7 +135,7 @@
 .ui.disabled.checkbox label,
 .ui.checkbox input[disabled] ~ label {
   opacity: 0.4;
-  color: hsl(var(--sui-lightness-lowest), 0.3);
+  color: hsl(var(--sui-fg-base-hsl), 0.3);
 }
 /*******************************
           Variations
@@ -182,7 +182,7 @@
   content: '';
   width: 3em;
   height: 2px;
-  background-color: hsl(var(--sui-lightness-lowest), 0.1);
+  background-color: hsl(var(--sui-fg-base-hsl), 0.1);
 }
 /* Button */
 .ui.slider.checkbox .box,
@@ -203,8 +203,8 @@
      -moz-transform: none;
       -ms-transform: none;
           transform: none;
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
-          box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
+          box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
   border-radius: 50rem;
   -webkit-transition: left 0.3s ease 0s;
      -moz-transition: left 0.3s ease 0s;
@@ -276,8 +276,8 @@
      -moz-transform: none;
       -ms-transform: none;
           transform: none;
-  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
-          box-shadow: 0px 0px 0px 1px hsl(var(--sui-lightness-lowest), 0.1) inset;
+  -webkit-box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
+          box-shadow: 0px 0px 0px 1px hsl(var(--sui-fg-base-hsl), 0.1) inset;
   border-radius: 50rem;
 }
 /* Activation Light */
